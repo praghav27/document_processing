@@ -1,0 +1,100 @@
+{
+  "filename": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-1",
+  "total_chunks": 3,
+  "processing_method": "structure_aware_llm",
+  "chunks": [
+    {
+      "chunk_id": "705-2531870800-PRO-G0001-01_AR26454_Waubaushene_TS-pages-1_section_content_section_1_chunk_01",
+      "content": "705-2531870800-PRO-G0001-01\n\nMay 6, 2025\n\nAkber Khan, P. ENG Manager, Project Engineering Hydro One Networks Inc Engineering Enablement\n\nThis proposal is the property of Tetra Tech Canada Inc., and it is protected by copyright for intellectual property. The content of this proposal is not intended for the use of, nor is it intended to be relied upon, by any person, firm, or corporation other than Hydro One Networks Inc .. This document contains confidential commercial and technical information and must not be released in whole, or in part, to any third party without express written consent. Tetra Tech Canada Inc. denies any liability whatsoever to other parties who may obtain access to this proposal for damages or injury suffered by such third parties arising from the use of this document or the information contained herein. If the recipient of the Proposal chooses not to accept it, it shall be returned to Tetra Tech Canada Inc. without delay.",
+      "metadata": {
+        "section_type": "general",
+        "section_title": "Content Section 1",
+        "section_hierarchy": "0",
+        "domain_category": "administrative",
+        "service_category": "general",
+        "content_type": "text",
+        "page_number": 1,
+        "chunk_number": 1,
+        "total_chunks_in_section": 1,
+        "token_count": 208,
+        "char_count": 957,
+        "has_table_content": false,
+        "has_image_content": false,
+        "table_count": 0,
+        "image_count": 0,
+        "classification_confidence": "medium"
+      },
+      "document_metadata": {
+        "document_id": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-1",
+        "document_title": "705-2531870800-PRO-G0001-01",
+        "client_name": "intellectual property. the content of this proposa",
+        "vendor_name": "akber khan, p.eng manager, project engineering hyd",
+        "project_site": "engineering hydro one networks inc engineering enablement",
+        "submission_date": "",
+        "project_value": 0.0
+      }
+    },
+    {
+      "chunk_id": "705-2531870800-PRO-G0001-01_AR26454_Waubaushene_TS-pages-1_section_10_introduction_chunk_02",
+      "content": "al is subject to an Access to Information Act, either Provincial/Territorial and/or Federal, we waive the terms in this statement that do not comply with that Act(s). 1.0 INTRODUCTION\n\nHydro One Networks Inc. (HONI) has invited Tetra Tech Canada Inc. (Tetra Tech) to provide a quote for engineering support AR26454 - Waubaushene TS: Replace T5 & T6 and DESN Rebuild project. This proposal is based on the Terms of Reference and the scope of work email dated March 20th, 2025, and further communications between HONI and Tetra Tech. Waubaushene TS is located in Southern Georgian Bay Region and was built in 1970. MVA, 230kV/44kV, power transformers T5 & T6. Transformers T5 & T6 are 50 years old and are reaching/exceeding their expected service life. Meanwhile, Regional Infrastructure Plan (RIP) identified the immediate need to provide additional supply capacity for the region. There is need to replace and upgrade existing 230/44KV 50/67/83MVA transformers (T5 & T6) with new 230/44KV 75/100/125MVA units, Hydro One standard 230-E power transformer.\n\n2.0 SCOPE OF WORK\n\nThe scope of work consists of installation of two n\n\n[FIGURE]: This is a title block diagram associated with an RFP document, detailing a project by Tetra Tech for Hydro One Networks Inc. The key elements include the project name \"Waubaushene TS: Replace T5 & T6 and DESN Rebuild (Part 1),\" the presentation date of May 6, 2025, and specific reference numbers for the RFP and Tetra Tech's internal tracking. The figure serves to identify the project scope and administrative details, providing essential contact information and the location of Tetra Tech's office in Mississauga, Ontario.",
+      "metadata": {
+        "section_type": "introduction",
+        "section_title": "1.0 INTRODUCTION",
+        "section_hierarchy": "1.0",
+        "domain_category": "engineering",
+        "service_category": "construction_support",
+        "content_type": "text_with_image",
+        "page_number": 1,
+        "chunk_number": 2,
+        "total_chunks_in_section": 1,
+        "token_count": 353,
+        "char_count": 1663,
+        "has_table_content": false,
+        "has_image_content": true,
+        "table_count": 0,
+        "image_count": 1,
+        "classification_confidence": "high"
+      },
+      "document_metadata": {
+        "document_id": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-1",
+        "document_title": "705-2531870800-PRO-G0001-01",
+        "client_name": "intellectual property. the content of this proposa",
+        "vendor_name": "akber khan, p.eng manager, project engineering hyd",
+        "project_site": "engineering hydro one networks inc engineering enablement",
+        "submission_date": "",
+        "project_value": 0.0
+      }
+    },
+    {
+      "chunk_id": "705-2531870800-PRO-G0001-01_AR26454_Waubaushene_TS-pages-1_section_final_content_section_chunk_03",
+      "content": "ew power transformers and new MV yard in the area West of the existing DESN within the station fenced area. The Ultimate Stage will remain with two DESNs without the 230kV bus installation in-between the two DESNs. The proposed scope of work consists of one new DESN with:\n\n· Two (2) 230kV line entrances\n\nTetra Tech Canada Inc. 6925 Century Avenue, Suite 200 Mississauga, ON, L5N 7K2 Tel 905.369.3000\n\n[FIGURE]: This figure appears to be a title block or cover page for a technical document related to an RFP. It includes key information such as the project name \"Waubaushene TS: Replace T5 & T6 and DESN Rebuild (Part 1),\" the recipient \"Hydro One Networks Inc.,\" and the presentation date \"May 6, 2025.\" Additionally, it lists the RFP number \"AR26454\" and a reference number \"TT NUMBER: 705-2531870800-PRO-G0001-01,\" along with contact details for Tetra Tech's office in Mississauga, Ontario. This figure serves to identify the document and provide essential reference and contact information for the RFP process.",
+      "metadata": {
+        "section_type": "scope_of_work",
+        "section_title": "Final Content Section",
+        "section_hierarchy": "0",
+        "domain_category": "engineering",
+        "service_category": "design",
+        "content_type": "text_with_image",
+        "page_number": 1,
+        "chunk_number": 3,
+        "total_chunks_in_section": 1,
+        "token_count": 220,
+        "char_count": 1016,
+        "has_table_content": false,
+        "has_image_content": true,
+        "table_count": 0,
+        "image_count": 1,
+        "classification_confidence": "high"
+      },
+      "document_metadata": {
+        "document_id": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-1",
+        "document_title": "705-2531870800-PRO-G0001-01",
+        "client_name": "intellectual property. the content of this proposa",
+        "vendor_name": "akber khan, p.eng manager, project engineering hyd",
+        "project_site": "engineering hydro one networks inc engineering enablement",
+        "submission_date": "",
+        "project_value": 0.0
+      }
+    }
+  ]
+}

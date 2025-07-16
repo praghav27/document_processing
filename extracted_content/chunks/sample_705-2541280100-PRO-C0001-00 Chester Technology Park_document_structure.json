@@ -1,0 +1,88 @@
+{
+  "filename": "sample_705-2541280100-PRO-C0001-00 Chester Technology Park",
+  "analysis_method": "llm_based",
+  "document_type": "rfp",
+  "total_sections": 10,
+  "sections": [
+    {
+      "title": "Content Section 1",
+      "hierarchy_level": 1,
+      "start_char": 0,
+      "end_char": 109,
+      "section_type": "general",
+      "content_preview": "[ParagraphRole.PAGE_HEADER] CHESTER TECHNOLOGY PARK MARCH 26, 2025 | 705-2541280100-PRO-C0001-00\n\n[P..."
+    },
+    {
+      "title": "2.2 STRUCTURAL",
+      "hierarchy_level": 1,
+      "start_char": 109,
+      "end_char": 1533,
+      "content_preview": "Tetra Tech will perform the structural foundation design for PV arrays and associated equipment within the PV array area including invertor/transformer station, switchgear, auxiliary rack, meteorological monitoring station, above ground cable management system, CCTV and combiner box...",
+      "section_type": "scope_of_work"
+    },
+    {
+      "title": "2.3 CONSTRUCTION SUPPORT",
+      "hierarchy_level": 1,
+      "start_char": 1534,
+      "end_char": 2488,
+      "content_preview": "Tetra Tech will provide construction support in the form of Request for Information (RFI) responses and design changes in response to field-related queries and discoveries. Upon receipt of field-initiated RFIs, Tetra Tech will prepare an RFI response within four (4) business days...",
+      "section_type": "scope_of_work"
+    },
+    {
+      "title": "Content Section 4",
+      "hierarchy_level": 1,
+      "start_char": 2488,
+      "end_char": 2600,
+      "section_type": "general",
+      "content_preview": "eries. Upon receipt of field-initiated RFIs, Tetra Tech will prepare an RFI response within four (4)..."
+    },
+    {
+      "title": "2.4 RECORD DRAWINGS",
+      "hierarchy_level": 1,
+      "start_char": 2600,
+      "end_char": 2833,
+      "content_preview": "After completion of construction, Tetra Tech will produce Record drawings based on the RFIs and contractor redlines depicting the as-built configuration. It is incumbent that the contractor identify any planned deviations from design and obtain design concurrence prior to field-related changes...",
+      "section_type": "scope_of_work"
+    },
+    {
+      "title": "3.0 DELIVERABLES",
+      "hierarchy_level": 1,
+      "start_char": 2834,
+      "end_char": 2958,
+      "content_preview": "Tetra Tech will submit civil and structural deliverables for the PV array area in accordance with the \"HQC Deliverable List\" attached at Appendix B of this proposal...",
+      "section_type": "scope_of_work"
+    },
+    {
+      "title": "4.0 ASSUMPTIONS",
+      "hierarchy_level": 1,
+      "start_char": 2959,
+      "end_char": 3555,
+      "content_preview": "Tetra Tech has considered the following assumptions in our estimate and proposal...",
+      "section_type": "assumptions"
+    },
+    {
+      "title": "4.1 GENERAL",
+      "hierarchy_level": 2,
+      "start_char": 3556,
+      "end_char": 3873,
+      "content_preview": "Tetra Tech has considered one (1) round of consolidated comments/review by the Owner at 30%, 60%, 90%, and IFC Design. It is expected comments would be returned within ten (10) working days...",
+      "section_type": "general"
+    },
+    {
+      "title": "4.2 CIVIL",
+      "hierarchy_level": 2,
+      "start_char": 3874,
+      "end_char": 4408,
+      "content_preview": "Offsite upgrades to public roads or storm infrastructure will not be required to support the development of the project. Efforts to upgrade offsite / public roads have not been included in this proposal...",
+      "section_type": "scope_of_work"
+    },
+    {
+      "title": "Final Content Section",
+      "hierarchy_level": 1,
+      "start_char": 4408,
+      "end_char": 5861,
+      "section_type": "assumptions",
+      "content_preview": "QC Deliverable List\" attached at Appendix B of this proposal.\n\n[ParagraphRole.SECTION_HEADING] 4.0 A..."
+    }
+  ]
+}

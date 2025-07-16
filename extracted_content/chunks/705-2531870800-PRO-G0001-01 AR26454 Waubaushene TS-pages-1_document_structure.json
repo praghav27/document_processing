@@ -1,0 +1,48 @@
+{
+  "filename": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-1",
+  "analysis_method": "llm_based",
+  "document_type": "rfp",
+  "total_sections": 5,
+  "sections": [
+    {
+      "title": "Content Section 1",
+      "hierarchy_level": 1,
+      "start_char": 0,
+      "end_char": 161,
+      "section_type": "general",
+      "content_preview": "705-2531870800-PRO-G0001-01\n\nMay 6, 2025\n\nAkber Khan, P.ENG Manager, Project Engineering Hydro One N..."
+    },
+    {
+      "title": "CONFIDENTIALITY STATEMENT",
+      "hierarchy_level": 1,
+      "start_char": 161,
+      "end_char": 1013,
+      "content_preview": "This proposal is the property of Tetra Tech Canada Inc., and it is protected by copyright for intellectual property...",
+      "section_type": "terms_conditions"
+    },
+    {
+      "title": "1.0 INTRODUCTION",
+      "hierarchy_level": 1,
+      "start_char": 1014,
+      "end_char": 1689,
+      "content_preview": "Hydro One Networks Inc. (HONI) has invited Tetra Tech Canada Inc. (Tetra Tech) to provide a quote for engineering...",
+      "section_type": "introduction"
+    },
+    {
+      "title": "2.0 SCOPE OF WORK",
+      "hierarchy_level": 1,
+      "start_char": 1690,
+      "end_char": 2203,
+      "content_preview": "The scope of work consists of installation of two new power transformers and new MV yard in the area West of the...",
+      "section_type": "scope_of_work"
+    },
+    {
+      "title": "Final Content Section",
+      "hierarchy_level": 1,
+      "start_char": 2203,
+      "end_char": 2605,
+      "section_type": "scope_of_work",
+      "content_preview": "ew power transformers and new MV yard in the area West of the existing DESN within the station fence..."
+    }
+  ]
+}

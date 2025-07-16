@@ -1,0 +1,67 @@
+[ParagraphRole.PAGE_HEADER] CHESTER TECHNOLOGY PARK MARCH 26, 2025 | 705-2541280100-PRO-C0001-00
+
+[ParagraphRole.SECTION_HEADING] 2.2 STRUCTURAL
+
+[None] Tetra Tech will perform the structural foundation design for PV arrays and associated equipment within the PV array area including invertor/transformer station, switchgear, auxiliary rack, meteorological monitoring station, above ground cable management system, CCTV and combiner box.
+
+[None] · The pile arrangement plan will indicate each pile location using dedicated symbol and/or color coding to differentiate pile type based on racking system classification (i.e. internal, motor, etc.).
+
+[None] . Pile location/schedule will be provided on '.CSV 'format showing the pile coordinates, section, length, elevation, and embedment depth.
+
+[None] · Tetra Tech will also provide the detailed structural design calculation for all pile types supporting PV arrays and other designated equipment.
+
+[None] · General notes will specify design criteria, material specifications, construction specification (pile installation tolerances, driving methods, refusal criteria), contractor submittals and reference document. General notes will also include Pile testing requirement and methodology.
+
+[None] · Tetra Tech will also submit the pile remediation plan to outlining corrective measures for piles that fail to meet minimum criteria due to refusal or excessive deflection.
+
+[None] · The design assumes driven steel piles as the primary foundation solution for PV arrays and associated equipment. If alternative foundation types (e.g., helical piles, ground screws) are preferred or required, Tetra Tech will assess feasibility and provide cost-impact considerations for client review.
+
+[None] · Tetra Tech will base the foundation design on the existing geotechnical report (Terracon, dated June 4th, 2024) for soil properties and subsurface conditions. Any additional geotechnical data or clarifications will be coordinated through the client and geotechnical engineer as needed to resolve unforeseen conditions.
+
+[None] · Tetra Tech will conduct corrosion study to determine the steel and zinc scarification during project lifetime. The corrosion impact will be incorporated into pile design calculations.
+
+[ParagraphRole.SECTION_HEADING] 2.3 CONSTRUCTION SUPPORT
+
+[None] Tetra Tech will provide construction support in the form of Request for Information (RFI) responses and design changes in response to field-related queries and discoveries. Upon receipt of field-initiated RFIs, Tetra Tech will prepare an RFI response within four (4) business days. Where RFIs are minor, Tetra Tech will strive to issue a response within two (2) business days.
+
+[None] Tetra Tech will also attend site visits at critical points during construction to ensure that the construction aligns with the design. Such critical hold points will be coordinated between Tetra Tech and FastGrid and documented in FastGrid's Inspection and Test Plan (ITP) prior to the start of construction. For the purposes of this proposal, Tetra Tech has included two (2) site visits for two (2) people.
+
+[None] Upon completion of each site visit during construction, Tetra Tech will produce a brief report summarizing findings and identifying any discrepancies between the field and design. Such discrepancies will be dispositioned with FastGrid, resulting either in changes to the field installation or to the design.
+
+[ParagraphRole.PAGE_NUMBER] 4
+
+[ParagraphRole.PAGE_HEADER] CHESTER TECHNOLOGY PARK MARCH 26, 2025 | 705-2541280100-PRO-C0001-00
+
+[None] Significant design changes identified during site visits / inspections may require additional efforts and time to complete. Any such instances will be discussed between Tetra Tech and FastGrid at the time of discovery.
+
+[ParagraphRole.SECTION_HEADING] 2.4 RECORD DRAWINGS
+
+[None] After completion of construction, Tetra Tech will produce Record drawings based on the RFIs and contractor redlines depicting the as-built configuration. It is incumbent that the contractor identify any planned deviations from design and obtain design concurrence prior to field-related changes in order to mitigate the risk of non-compliance with design requirements, Codes or relevant standards.
+
+[ParagraphRole.SECTION_HEADING] 3.0 DELIVERABLES
+
+[None] Tetra Tech will submit civil and structural deliverables for the PV array area in accordance with the "HQC Deliverable List" attached at Appendix B of this proposal.
+
+[ParagraphRole.SECTION_HEADING] 4.0 ASSUMPTIONS
+
+[None] Tetra Tech has considered the following assumptions in our estimate and proposal:
+
+[ParagraphRole.SECTION_HEADING] 4.1 GENERAL
+
+[None] · Tetra Tech has considered one (1) round of consolidated comments/review by the Owner at 30%, 60%, 90%, and IFC Design. It is expected comments would be returned within ten (10) working days.
+
+[None] . The design drawings, documents, and studies provided within the RFP will be available in their native format and will serve as a starting point to initiating design and construction packages.
+
+[None] · As-built drawings will be provided as per redlined construction set drawings and no field verification will be done.
+
+[ParagraphRole.SECTION_HEADING] 4.2 CIVIL
+
+[None] · Offsite upgrades to public roads or storm infrastructure will not be required to support the development of the project. Efforts to upgrade offsite / public roads have not been included in this proposal.
+
+[None] · Temporary construction sewage services will be provided by onsite Porta-Johns and that no permanent septic system is required.
+
+[None] . Construction water will be imported or sourced by the contractor and that onsite water services or water wells are not required.
+
+[None] The design drawings will be created in AutoCAD and will be 2D. A 3D model / BIM Modeling is not required.
+
+[ParagraphRole.PAGE_NUMBER] 5

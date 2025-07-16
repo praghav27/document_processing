@@ -1,0 +1,69 @@
+{
+  "filename": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-2",
+  "total_chunks": 2,
+  "processing_method": "structure_aware_llm",
+  "chunks": [
+    {
+      "chunk_id": "705-2531870800-PRO-G0001-01_AR26454_Waubaushene_TS-pages-2_section_content_section_1_chunk_01",
+      "content": "WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01\n\n· Two (2) 230kV line disconnect switches with ground switches\n\n· Two (2) 230kV CVTs\n\n· Two 75/100/125MVA 230kV/44kV power transformers with spill containments, surge arresters, and two (2) neutral grounding reactors\n\n. Two ACSS Transformers\n\n. 44KV switchyard IT. apacitor bank\n\n· PC&T building with DCSS\n\n· AC station services\n\n· Lightning protection towers\n\n2.1 ELECTRICAL ARRANGEMENT\n\nThe new station will be a single secondary DESN with 8 feeders and one capacitor bank. The following is a list of Basic Layout / Electrical Arrangement design & engineering activities for the station\n\n230kV Work\n\n· Install 2 (two) new line entrances\n\n· Install 2 (two) line disconnect switches with ground switches for the connection of the new lines\n\n. Install new 8\" bus towards the new power transformers\n\n· Install 6 (six) new 230kV surge arresters for the new power transformers\n\n· Install 6 (six) new CVTs\n\nPower Transformers\n\n· Install 2 (two) 75/100/125MVA 230kV/44kV power transformers on new foundations with spill containments and OWS\n\n44kV work\n\n· Install 6 (six) 44KV surge arresters for the power transformers\n\n· Install 2 (two) neutral reactors for the power transformers\n\n· Install 6 (six) doble test connectors\n\n· Install 1 (one) capacitor bank (Reused from existing station)\n\n· Install 3 (three) capacitor bank surge arresters (Reused from existing station)\n\n· Install 1 (one) 44KV capacitor bank ground switch (Reused from existing station)\n\n· Install 1 (one) 44KV capacitor bank breaker (Reused from existing station)\n\n. Install new fence for the 44kV capacitor bank\n\n· Install 3 (three) 44kV breakers for the transformers and the bus tie\n\n· Install 7 (seven) 44kV breakers for the feeders,\n\n· Install 1 (one) 44kV breaker for the feeder as an addition\n\n· Install 6 (six) 44kV DSWs for the transformer and bus tie breakers, gang operated\n\n2\n\nAR26454\n\nWAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01\n\n· Install 45 (forty-five) 44kV DSWs hook stick operated for the feeder breakers and cap bank breaker\n\n· Install 6 (six) 44kV DSWs hook stick operated for one additional feeder breaker\n\n· Install 3 (three) 44kV feeder tie disconnect switches\n\n· Install 1 (one) 44KV feeder tie disconnect switch as an addition\n\n· Install 2 (two) new fused load interrupting switches for the SSTRs\n\n.",
+      "metadata": {
+        "section_type": "technical_requirements",
+        "section_title": "Content Section 1",
+        "section_hierarchy": "0",
+        "domain_category": "technical",
+        "service_category": "design",
+        "content_type": "text",
+        "page_number": 1,
+        "chunk_number": 1,
+        "total_chunks_in_section": 1,
+        "token_count": 524,
+        "char_count": 2418,
+        "has_table_content": false,
+        "has_image_content": false,
+        "table_count": 0,
+        "image_count": 0,
+        "classification_confidence": "high"
+      },
+      "document_metadata": {
+        "document_id": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-2",
+        "document_title": "WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01",
+        "client_name": "",
+        "vendor_name": "the new station will be a single secondary desn wi",
+        "project_site": "",
+        "submission_date": "",
+        "project_value": 0.0
+      }
+    },
+    {
+      "chunk_id": "705-2531870800-PRO-G0001-01_AR26454_Waubaushene_TS-pages-2_section_final_content_section_chunk_02",
+      "content": "\" bus and bus support for the 44kV connections\n\n· Install 6 (six) new voltage transformers\n\n· Install 6 (six) new metering transformers CT/VT combo\n\n· Install 2 (two) VTs for two of the feeders (M1 & M5)\n\nBuildings\n\n· Install a new 54ft PC&T building that will accommodate all protection, control, telecom equipment as well as the DCSS\n\nAC Station Services\n\n· Install AC station services\n\n· Install 2 (two) 225kVA 44kV/208V-120V ACSS transformers, pad mounted (SST size will be verified by ACSS study during the design stage of the project)\n\n· Install 1 (one) set of ACSS MTS\n\n. Install ACSS main panels and TECK cables to the AC loads\n\n· Install 1 (one) new 400A connection for diesel generator\n\n· Install 2 (two) new ATS for supply of the auxiliary power to the power transformers\n\n· Install 1 (one) new ATS for supply of the battery charger\n\n· Install cable from the new ACSS panels to the existing relay building\n\nDC Station Services\n\n· Install DC station services\n\n. Install one set of 330Ah 125V DC batteries with standard two rows of two tier installation in the PCT building\n\n· Install 1 (one) set of DC panels, standard setup for PCT building\n\n· Install 1 (one) new 125V DC, 60A battery charger\n\n· Install 1 (one) new DC panel on the main level to supply the remaining equipment in the existing building\n\n44kV Feeders\n\n· All 44KV feeders will be O/H lines going to outside of station north fence. · Install duct bank for the road crossing for the cap bank cables. The approximate size of the duct bank will be 8m length, 1m width and 0.8m depth. Trench work\n\n. Install trench that will connect the PCT building with all the equipment in the yard.",
+      "metadata": {
+        "section_type": "scope_of_work",
+        "section_title": "Final Content Section",
+        "section_hierarchy": "0",
+        "domain_category": "engineering",
+        "service_category": "construction_support",
+        "content_type": "text",
+        "page_number": 1,
+        "chunk_number": 2,
+        "total_chunks_in_section": 1,
+        "token_count": 398,
+        "char_count": 1655,
+        "has_table_content": false,
+        "has_image_content": false,
+        "table_count": 0,
+        "image_count": 0,
+        "classification_confidence": "high"
+      },
+      "document_metadata": {
+        "document_id": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-2",
+        "document_title": "WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01",
+        "client_name": "",
+        "vendor_name": "the new station will be a single secondary desn wi",
+        "project_site": "",
+        "submission_date": "",
+        "project_value": 0.0
+      }
+    }
+  ]
+}

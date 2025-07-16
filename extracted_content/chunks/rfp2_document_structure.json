@@ -1,0 +1,48 @@
+{
+  "filename": "rfp2",
+  "analysis_method": "llm_based",
+  "document_type": "rfp",
+  "total_sections": 5,
+  "sections": [
+    {
+      "title": "1. Introduction",
+      "hierarchy_level": 1,
+      "start_char": 95,
+      "end_char": 451,
+      "content_preview": "The Municipality of Groenstad invites qualified parties to submit proposals for the design and implemen...",
+      "section_type": "introduction"
+    },
+    {
+      "title": "2. Project Objectives",
+      "hierarchy_level": 1,
+      "start_char": 452,
+      "end_char": 769,
+      "content_preview": "The project has the following main goals:\n\n· Reduction of water consumption by at least 25% within a ...",
+      "section_type": "introduction"
+    },
+    {
+      "title": "3. Scope of Work",
+      "hierarchy_level": 1,
+      "start_char": 770,
+      "end_char": 1015,
+      "content_preview": "The selected provider will be responsible for:\n\n· Analyzing the current water infrastructure in the ...",
+      "section_type": "scope_of_work"
+    },
+    {
+      "title": "4. Budget and Timeline",
+      "hierarchy_level": 1,
+      "start_char": 1016,
+      "end_char": 1205,
+      "content_preview": "· Available budget: €250,000 (including installation, communication, training, and maintenance).\n\n· E...",
+      "section_type": "general"
+    },
+    {
+      "title": "Final Content Section",
+      "hierarchy_level": 1,
+      "start_char": 1205,
+      "end_char": 1502,
+      "section_type": "timeline",
+      "content_preview": "Training municipal staff and informing citizens.\n\n· Monitoring, reporting, and evaluating the achiev..."
+    }
+  ]
+}

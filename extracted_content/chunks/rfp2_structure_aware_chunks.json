@@ -1,0 +1,100 @@
+{
+  "filename": "rfp2",
+  "total_chunks": 3,
+  "processing_method": "structure_aware_llm",
+  "chunks": [
+    {
+      "chunk_id": "rfp2_section_1_introduction_chunk_01",
+      "content": "Publication Date: June 16, 2025\n\n1. Introduction\n\nThe Municipality of Groenstad invites qualified parties to submit proposals for the design and implementation of a sustainable water conservation project. This initiative is part of the municipality's broader sustainability policy and aims to reduce water consumption, raise awareness among residents, and \n\n[FIGURE]: This figure is a collection of slogans focused on water conservation, likely presented as a motivational or awareness-raising element within the RFP document. It emphasizes the importance of saving water through various catchy phrases, each highlighting the critical role of water in sustaining life and the environment. The purpose is to inspire and encourage stakeholders to prioritize water conservation efforts, aligning with the broader goals of the RFP. mplement innovative water-saving technologies in the urban environment.\n\n2. Project Objectives\n\nThe project has the following main goals:\n\n· Reduction of water consumption by at least 25% within a period of 24 months.\n\n· Installation of rainwater harvesting systems at government buildings, schools, and parks.\n\n· Dev\n\n[FIGURE]: This figure is a collection of slogans focused on water conservation, likely presented as a motivational or awareness-raising element within the RFP document. It emphasizes the importance of saving water through impactful phrases such as \"Save Water, Secure the Future\" and \"Every Drop Counts - Make It Last!\" The purpose is to highlight the critical role of water conservation in environmental sustainability and to inspire action among stakeholders.",
+      "metadata": {
+        "section_type": "introduction",
+        "section_title": "1. Introduction",
+        "section_hierarchy": "1.",
+        "domain_category": "environmental",
+        "service_category": "design",
+        "content_type": "text_with_image",
+        "page_number": 1,
+        "chunk_number": 1,
+        "total_chunks_in_section": 1,
+        "token_count": 312,
+        "char_count": 1608,
+        "has_table_content": false,
+        "has_image_content": true,
+        "table_count": 0,
+        "image_count": 2,
+        "classification_confidence": "high"
+      },
+      "document_metadata": {
+        "document_id": "rfp2",
+        "document_title": "Request for Proposal (RFP) - Water Conservation Project",
+        "client_name": "",
+        "vendor_name": "the municipality of groenstad invites qualified pa",
+        "project_site": "issued by: municipality of groenstad",
+        "submission_date": "june 16, 2025",
+        "project_value": 0.0
+      }
+    },
+    {
+      "chunk_id": "rfp2_section_3_scope_of_work_chunk_02",
+      "content": "lopment of educational campaigns for citizens and businesses on efficient and responsible water usage.\n\n· Digitization of water consumption through smart meters and monitoring tools.\n\n3. Scope of Work\n\nThe selected provider will be responsible f\n\n[TABLE]: This table outlines various water conservation strategies, detailing their descriptions, benefits, implementation areas, and estimated savings. It highlights four key strategies: Rainwater Harvesting, Low-Flow Fixtures, Drip Irrigation, and Leak Detection Systems, each aimed at reducing water usage and enhancing efficiency. The table emphasizes the potential savings, such as up to 40% water savings from rainwater harvesting and 30-50% less water needed with drip irrigation, showcasing their relevance for public buildings, homes, agriculture, and urban infrastructure. In the RFP context, these strategies are crucial for proposing sustainable solutions that offer significant environmental and cost benefits. r:\n\n· Analyzing the current water infrastructure in the municipality. · Designing tailored solutions for water conservation. · Implementing physical installations and digital systems.",
+      "metadata": {
+        "section_type": "scope_of_work",
+        "section_title": "3. Scope of Work",
+        "section_hierarchy": "3.",
+        "domain_category": "environmental",
+        "service_category": "consulting",
+        "content_type": "text_with_table",
+        "page_number": 1,
+        "chunk_number": 2,
+        "total_chunks_in_section": 1,
+        "token_count": 206,
+        "char_count": 1154,
+        "has_table_content": true,
+        "has_image_content": false,
+        "table_count": 1,
+        "image_count": 0,
+        "classification_confidence": "high"
+      },
+      "document_metadata": {
+        "document_id": "rfp2",
+        "document_title": "Request for Proposal (RFP) - Water Conservation Project",
+        "client_name": "",
+        "vendor_name": "the municipality of groenstad invites qualified pa",
+        "project_site": "issued by: municipality of groenstad",
+        "submission_date": "june 16, 2025",
+        "project_value": 0.0
+      }
+    },
+    {
+      "chunk_id": "rfp2_section_final_content_section_chunk_03",
+      "content": "Training municipal staff and informing citizens. · Monitoring, reporting, and evaluating the achieved water savings. 4. Budget and Timeline\n\n· Available budget: €250,000 (including installation, communication, training, and maintenance).",
+      "metadata": {
+        "section_type": "timeline",
+        "section_title": "Final Content Section",
+        "section_hierarchy": "0",
+        "domain_category": "administrative",
+        "service_category": "maintenance",
+        "content_type": "text",
+        "page_number": 1,
+        "chunk_number": 3,
+        "total_chunks_in_section": 1,
+        "token_count": 38,
+        "char_count": 237,
+        "has_table_content": false,
+        "has_image_content": false,
+        "table_count": 0,
+        "image_count": 0,
+        "classification_confidence": "medium"
+      },
+      "document_metadata": {
+        "document_id": "rfp2",
+        "document_title": "Request for Proposal (RFP) - Water Conservation Project",
+        "client_name": "",
+        "vendor_name": "the municipality of groenstad invites qualified pa",
+        "project_site": "issued by: municipality of groenstad",
+        "submission_date": "june 16, 2025",
+        "project_value": 0.0
+      }
+    }
+  ]
+}

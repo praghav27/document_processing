@@ -1,0 +1,61 @@
+{
+  "processing_method": "structure_aware_llm",
+  "statistics": {
+    "total_chunks": 2,
+    "total_sections_processed": 3,
+    "total_tokens": 922,
+    "total_characters": 4073,
+    "average_chunk_size_tokens": 461.0,
+    "average_chunk_size_chars": 2036.5,
+    "text_coverage_percentage": 95.79021636876763,
+    "multimodal_integration": {
+      "tables_integrated": 0,
+      "images_integrated": 0,
+      "chunks_with_tables": 0,
+      "chunks_with_images": 0
+    }
+  },
+  "metadata_summary": {
+    "total_chunks": 2,
+    "distribution": {
+      "by_section_type": {
+        "technical_requirements": 1,
+        "scope_of_work": 1
+      },
+      "by_domain_category": {
+        "technical": 1,
+        "engineering": 1
+      },
+      "by_service_category": {
+        "design": 1,
+        "construction_support": 1
+      },
+      "by_content_type": {
+        "text": 2
+      }
+    },
+    "statistics": {
+      "avg_chunk_size_tokens": 461.0,
+      "avg_chunk_size_chars": 2036.5,
+      "total_tokens": 922,
+      "total_chars": 4073,
+      "chunks_with_tables": 0,
+      "chunks_with_images": 0,
+      "chunks_with_multimodal": 0
+    }
+  },
+  "processing_details": {
+    "structure_analysis_method": "llm_based",
+    "total_sections_found": 3,
+    "content_mapping_stats": {
+      "total_tables": 0,
+      "total_images": 2,
+      "mapped_tables": 0,
+      "mapped_images": 0
+    },
+    "unmapped_content": {
+      "tables": 0,
+      "images": 2
+    }
+  }
+}

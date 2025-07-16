@@ -1,0 +1,32 @@
+{
+  "filename": "705-2531870800-PRO-G0001-01 AR26454 Waubaushene TS-pages-2",
+  "analysis_method": "llm_based",
+  "document_type": "rfp",
+  "total_sections": 3,
+  "sections": [
+    {
+      "title": "Content Section 1",
+      "hierarchy_level": 1,
+      "start_char": 0,
+      "end_char": 497,
+      "section_type": "technical_requirements",
+      "content_preview": "WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01\n\n· Two (2) 2..."
+    },
+    {
+      "title": "2.1 ELECTRICAL ARRANGEMENT",
+      "hierarchy_level": 2,
+      "start_char": 497,
+      "end_char": 2583,
+      "content_preview": "The new station will be a single secondary DESN with 8 feeders and one capacitor bank. The following is a list of Basic Layout / Electrical Arrangement design & engineering activities for the station...",
+      "section_type": "technical_requirements"
+    },
+    {
+      "title": "Final Content Section",
+      "hierarchy_level": 1,
+      "start_char": 2583,
+      "end_char": 4252,
+      "section_type": "scope_of_work",
+      "content_preview": "\" bus and bus support for the 44kV connections\n\n· Install 6 (six) new voltage transformers\n\n· Instal..."
+    }
+  ]
+}

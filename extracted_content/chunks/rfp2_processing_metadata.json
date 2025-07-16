@@ -1,0 +1,65 @@
+{
+  "processing_method": "structure_aware_llm",
+  "statistics": {
+    "total_chunks": 3,
+    "total_sections_processed": 5,
+    "total_tokens": 556,
+    "total_characters": 2999,
+    "average_chunk_size_tokens": 185.33333333333334,
+    "average_chunk_size_chars": 999.6666666666666,
+    "text_coverage_percentage": 213.60398860398863,
+    "multimodal_integration": {
+      "tables_integrated": 1,
+      "images_integrated": 2,
+      "chunks_with_tables": 1,
+      "chunks_with_images": 1
+    }
+  },
+  "metadata_summary": {
+    "total_chunks": 3,
+    "distribution": {
+      "by_section_type": {
+        "introduction": 1,
+        "scope_of_work": 1,
+        "timeline": 1
+      },
+      "by_domain_category": {
+        "environmental": 2,
+        "administrative": 1
+      },
+      "by_service_category": {
+        "design": 1,
+        "consulting": 1,
+        "maintenance": 1
+      },
+      "by_content_type": {
+        "text_with_image": 1,
+        "text_with_table": 1,
+        "text": 1
+      }
+    },
+    "statistics": {
+      "avg_chunk_size_tokens": 185.33333333333334,
+      "avg_chunk_size_chars": 999.6666666666666,
+      "total_tokens": 556,
+      "total_chars": 2999,
+      "chunks_with_tables": 1,
+      "chunks_with_images": 1,
+      "chunks_with_multimodal": 0
+    }
+  },
+  "processing_details": {
+    "structure_analysis_method": "llm_based",
+    "total_sections_found": 5,
+    "content_mapping_stats": {
+      "total_tables": 1,
+      "total_images": 1,
+      "mapped_tables": 1,
+      "mapped_images": 2
+    },
+    "unmapped_content": {
+      "tables": 0,
+      "images": 0
+    }
+  }
+}

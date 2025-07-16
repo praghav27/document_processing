@@ -1,0 +1,137 @@
+WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01
+
+· Two (2) 230kV line disconnect switches with ground switches
+
+· Two (2) 230kV CVTs
+
+· Two 75/100/125MVA 230kV/44kV power transformers with spill containments, surge arresters, and two (2) neutral grounding reactors
+
+. Two ACSS Transformers
+
+. 44KV switchyard IT. 210B with 7 feeders with incremental cost for addition of 8th feeder breaker and associated disconnect switches and feeder tie switches
+
+· One capacitor bank
+
+· PC&T building with DCSS
+
+· AC station services
+
+· Lightning protection towers
+
+2.1 ELECTRICAL ARRANGEMENT
+
+The new station will be a single secondary DESN with 8 feeders and one capacitor bank. The following is a list of Basic Layout / Electrical Arrangement design & engineering activities for the station
+
+230kV Work
+
+· Install 2 (two) new line entrances
+
+· Install 2 (two) line disconnect switches with ground switches for the connection of the new lines
+
+. Install new 8" bus towards the new power transformers
+
+· Install 6 (six) new 230kV surge arresters for the new power transformers
+
+· Install 6 (six) new CVTs
+
+Power Transformers
+
+· Install 2 (two) 75/100/125MVA 230kV/44kV power transformers on new foundations with spill containments and OWS
+
+44kV work
+
+· Install 6 (six) 44KV surge arresters for the power transformers
+
+· Install 2 (two) neutral reactors for the power transformers
+
+· Install 6 (six) doble test connectors
+
+· Install 1 (one) capacitor bank (Reused from existing station)
+
+· Install 3 (three) capacitor bank surge arresters (Reused from existing station)
+
+· Install 1 (one) 44KV capacitor bank ground switch (Reused from existing station)
+
+· Install 1 (one) 44KV capacitor bank breaker (Reused from existing station)
+
+. Install new fence for the 44kV capacitor bank
+
+· Install 3 (three) 44kV breakers for the transformers and the bus tie
+
+· Install 7 (seven) 44kV breakers for the feeders,
+
+· Install 1 (one) 44kV breaker for the feeder as an addition
+
+· Install 6 (six) 44kV DSWs for the transformer and bus tie breakers, gang operated
+
+2
+
+AR26454
+
+WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01
+
+· Install 45 (forty-five) 44kV DSWs hook stick operated for the feeder breakers and cap bank breaker
+
+· Install 6 (six) 44kV DSWs hook stick operated for one additional feeder breaker
+
+· Install 3 (three) 44kV feeder tie disconnect switches
+
+· Install 1 (one) 44KV feeder tie disconnect switch as an addition
+
+· Install 2 (two) new fused load interrupting switches for the SSTRs
+
+. Install all of the 5" bus and bus support for the 44kV connections
+
+· Install 6 (six) new voltage transformers
+
+· Install 6 (six) new metering transformers CT/VT combo
+
+· Install 2 (two) VTs for two of the feeders (M1 & M5)
+
+Buildings
+
+· Install a new 54ft PC&T building that will accommodate all protection, control, telecom equipment as well as the DCSS
+
+AC Station Services
+
+· Install AC station services
+
+· Install 2 (two) 225kVA 44kV/208V-120V ACSS transformers, pad mounted (SST size will be verified by ACSS study during the design stage of the project)
+
+· Install 1 (one) set of ACSS MTS
+
+. Install ACSS main panels and TECK cables to the AC loads
+
+· Install 1 (one) new 400A connection for diesel generator
+
+· Install 2 (two) new ATS for supply of the auxiliary power to the power transformers
+
+· Install 1 (one) new ATS for supply of the battery charger
+
+· Install cable from the new ACSS panels to the existing relay building
+
+DC Station Services
+
+· Install DC station services
+
+. Install one set of 330Ah 125V DC batteries with standard two rows of two tier installation in the PCT building
+
+· Install 1 (one) set of DC panels, standard setup for PCT building
+
+· Install 1 (one) new 125V DC, 60A battery charger
+
+· Install 1 (one) new DC panel on the main level to supply the remaining equipment in the existing building
+
+44kV Feeders
+
+· All 44KV feeders will be O/H lines going to outside of station north fence.
+
+· Install duct bank for the road crossing for the cap bank cables. The approximate size of the duct bank will be 8m length, 1m width and 0.8m depth.
+
+Trench work
+
+. Install trench that will connect the PCT building with all the equipment in the yard.
+
+3
+
+AR26454

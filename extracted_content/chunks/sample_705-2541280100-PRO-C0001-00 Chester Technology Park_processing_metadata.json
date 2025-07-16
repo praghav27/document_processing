@@ -1,0 +1,63 @@
+{
+  "processing_method": "structure_aware_llm",
+  "statistics": {
+    "total_chunks": 5,
+    "total_sections_processed": 10,
+    "total_tokens": 922,
+    "total_characters": 4742,
+    "average_chunk_size_tokens": 184.4,
+    "average_chunk_size_chars": 948.4,
+    "text_coverage_percentage": 80.97677595628416,
+    "multimodal_integration": {
+      "tables_integrated": 0,
+      "images_integrated": 0,
+      "chunks_with_tables": 0,
+      "chunks_with_images": 0
+    }
+  },
+  "metadata_summary": {
+    "total_chunks": 5,
+    "distribution": {
+      "by_section_type": {
+        "general": 1,
+        "scope_of_work": 3,
+        "assumptions": 1
+      },
+      "by_domain_category": {
+        "general": 1,
+        "engineering": 3,
+        "administrative": 1
+      },
+      "by_service_category": {
+        "general": 1,
+        "construction_support": 4
+      },
+      "by_content_type": {
+        "text": 5
+      }
+    },
+    "statistics": {
+      "avg_chunk_size_tokens": 184.4,
+      "avg_chunk_size_chars": 948.4,
+      "total_tokens": 922,
+      "total_chars": 4742,
+      "chunks_with_tables": 0,
+      "chunks_with_images": 0,
+      "chunks_with_multimodal": 0
+    }
+  },
+  "processing_details": {
+    "structure_analysis_method": "llm_based",
+    "total_sections_found": 10,
+    "content_mapping_stats": {
+      "total_tables": 0,
+      "total_images": 2,
+      "mapped_tables": 0,
+      "mapped_images": 0
+    },
+    "unmapped_content": {
+      "tables": 0,
+      "images": 2
+    }
+  }
+}
