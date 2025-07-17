@@ -1,0 +1,45 @@
+[ParagraphRole.PAGE_HEADER] WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01
+
+[None] · Following the response to the bid clarification questions, Tetra Tech has excluded efforts for staging drawings as local HONI P&C team will manage staging and temporary wiring for this project. However, Tetra Tech will provide support for temporary settings, if required, for the Transformers and potentially the 230kV lines at the Terminal station, as there will be a need to parallel two transformer banks on each line.
+
+[ParagraphRole.SECTION_HEADING] 5.4 CIVIL/STRUCTURAL
+
+[None] · Helical pile design/sizing will be by external helical pile vendor that HONI will procure. Tetra tech shall put these drawings in HONI Title block during as built stage.
+
+[None] · Structural steel shop drawing review are not considered in Tetra tech's estimate.
+
+[ParagraphRole.SECTION_HEADING] 6.0 PROJECT SCHEDULE
+
+[None] We confirm that we have the resources available to start the project immediately upon receiving the PO. A high- level schedule is provided below, and the detailed project schedule and milestone dates will be established at the kick-off meeting, or shortly after completing all engineering deliverables.
+
+[ParagraphRole.SECTION_HEADING] 7.0 QUALITY ASSURANCE/QUALITY CONTROL
+
+[None] This work will be completed under Tetra Tech's Quality Assurance Program, which has been audited and confirmed to meet the requirements of ISO9001:2015. Our overall quality program involves a continuous process of constant
+
+[ParagraphRole.PAGE_NUMBER] 12
+
+[ParagraphRole.PAGE_FOOTER] AR26454
+
+[ParagraphRole.PAGE_HEADER] WAUBAUSHENE TS: REPLACE T5 & T6 AND DESN REBUILD (PART 1) | 705-2531870800-PRO-G0001-01
+
+[None] monitoring of deliverables, internal reviews and audits, corrective actions, client reviews, and incorporating client feedback into our business processes for continuous improvement-all in accordance with our documented best practices.
+
+[ParagraphRole.SECTION_HEADING] 8.0 COMMERCIAL PROPOSAL
+
+[None] All work has been considered on a fixed price basis, in accordance with the existing Master Services Agreement between Hydro One Networks Inc. and Tetra Tech Canada Inc.
+
+[None] Detailed costing has been provided in the Resource Allocation Sheets (RAS), which have been submitted separately.
+
+[ParagraphRole.SECTION_HEADING] 9.0 TERMS & CONDITIONS
+
+[None] The terms and conditions are pursuant to those established in the Master Services Agreement (MSA) between HONI and Tetra Tech.
+
+[None] We trust this proposal meets your present requirements. If you have any questions or comments, please contact the undersigned.
+
+[None] Respectfully submitted, Tetra Tech Canada Inc.
+
+[None] Jason McLindon Vice President, Energy Tel: 289-928-2467 jason.mclindon@tetratech.com
+
+[ParagraphRole.PAGE_NUMBER] 13
+
+[ParagraphRole.PAGE_FOOTER] AR26454

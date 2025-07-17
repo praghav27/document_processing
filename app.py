@@ -70,7 +70,7 @@ initialize_session_state()
 
 # Header
 st.markdown('<h1 class="main-header">📄 Document Processor</h1>', unsafe_allow_html=True)
-st.markdown('<p style="text-align: center; color: #666;">Upload documents and extract text, tables, and images using Azure Document Intelligence Layout Model</p>', unsafe_allow_html=True)
+st.markdown('<p style="text-align: center; color: #666;">Upload documents and extract text, tables, and images using Azure Document Intelligence</p>', unsafe_allow_html=True)
 
 # Sidebar configuration
 with st.sidebar:
@@ -87,10 +87,10 @@ with st.sidebar:
     # Statistics
     if st.session_state.processed_data:
         stats = st.session_state.processed_data.get("stats", {})
-        st.subheader("📊 Current Document Stats")
+        st.subheader("📊 Document Stats")
         st.metric("Text Chunks", stats.get("text_count", 0))
         st.metric("Tables", stats.get("table_count", 0))
-        st.metric("Figures/Images", stats.get("image_count", 0))
+        st.metric("Images", stats.get("image_count", 0))
         
         # Storage info
         st.subheader("💾 Local Storage")
@@ -168,7 +168,7 @@ if st.session_state.processed_data:
     st.header("📋 Extracted Content")
     
     # Create tabs
-    tab1, tab2, tab3, tab4 = st.tabs(["📝 Text Content", "📊 Tables", "🖼️ Figures/Images", "💾 Storage Info"])
+    tab1, tab2, tab3, tab4 = st.tabs(["📝 Text Content", "📊 Tables", "🖼️ Images", "💾 Storage Info"])
     
     with tab1:
         st.subheader("📝 Text Chunks")
@@ -197,10 +197,19 @@ if st.session_state.processed_data:
                 start_idx = 0
             
             for i, chunk in enumerate(chunks_to_show):
-                with st.expander(f"Chunk {start_idx + i + 1} ({len(chunk)} chars)"):
-                    st.markdown(f'<div class="content-box">{chunk}</div>', unsafe_allow_html=True)
+                chunk_content = chunk.get("content", "") if isinstance(chunk, dict) else str(chunk)
+                chunk_id = chunk.get("chunk_id", f"chunk_{start_idx + i + 1}") if isinstance(chunk, dict) else f"chunk_{start_idx + i + 1}"
+                section_name = chunk.get("section_name", "Unknown Section") if isinstance(chunk, dict) else "Unknown Section"
+                
+                with st.expander(f"Chunk {start_idx + i + 1} - {section_name} ({len(chunk_content)} chars)"):
+                    st.markdown(f'<div class="content-box"><strong>ID:</strong> {chunk_id}<br><strong>Content:</strong><br>{chunk_content}</div>', unsafe_allow_html=True)
+                    
+                    # Show metadata if available
+                    if isinstance(chunk, dict) and "metadata" in chunk:
+                        metadata = chunk["metadata"]
+                        st.markdown(f"**Metadata:** Word Count: {metadata.get('word_count', 0)}, Created: {metadata.get('created_at', 'N/A')}")
         else:
-            st.warning("No text content extracted")
+            st.warning("No text chunks created")
     
     with tab2:
         st.subheader("📊 Extracted Tables")
@@ -242,16 +251,16 @@ if st.session_state.processed_data:
             st.warning("No tables extracted")
     
     with tab3:
-        st.subheader("🖼️ Extracted Figures/Images")
+        st.subheader("🖼️ Extracted Images")
         images = st.session_state.processed_data.get("images", [])
         
         if images:
-            st.info(f"Found {len(images)} figures/images")
+            st.info(f"Found {len(images)} images")
             
             for i, image in enumerate(images):
                 image_type = image.get('type', 'figure')
                 
-                with st.expander(f"Figure {i + 1} - Page {image.get('page_number', 'Unknown')} ({image_type})"):
+                with st.expander(f"Image {i + 1} - Page {image.get('page_number', 'Unknown')} ({image_type})"):
                     
                     # Check if actual image is available
                     if image.get('image_base64'):
@@ -266,13 +275,13 @@ if st.session_state.processed_data:
                             try:
                                 img_data = base64.b64decode(image['image_base64'])
                                 img = PILImage.open(io.BytesIO(img_data))
-                                st.image(img, caption=f"Figure from Page {image.get('page_number')}", use_column_width=True)
+                                st.image(img, caption=f"Image from Page {image.get('page_number')}", use_column_width=True)
                                 
                                 # Download button
                                 st.download_button(
                                     label="📥 Download Image",
                                     data=img_data,
-                                    file_name=f"figure_{i+1}_page_{image.get('page_number', 'unknown')}.png",
+                                    file_name=f"image_{i+1}_page_{image.get('page_number', 'unknown')}.png",
                                     mime="image/png",
                                     key=f"download_img_{i}"
                                 )
@@ -280,7 +289,7 @@ if st.session_state.processed_data:
                                 st.error(f"Error displaying image: {e}")
                         
                         with col_details:
-                            st.markdown("**Figure Details:**")
+                            st.markdown("**Image Details:**")
                             st.write(f"Page: {image.get('page_number', 'Unknown')}")
                             st.write(f"Type: {image_type}")
                             if image.get('width') and image.get('height'):
@@ -288,19 +297,19 @@ if st.session_state.processed_data:
                             if image.get('image_path'):
                                 st.write(f"Saved: {os.path.basename(image.get('image_path'))}")
                     
-                    # Show text content from figure
+                    # Show text content from image
                     if image.get('content') and image.get('content') != f"Figure from page {image.get('page_number')}":
-                        st.markdown("**Text Content from Figure:**")
+                        st.markdown("**Text Content from Image:**")
                         st.markdown(f'<div class="image-box">{image.get("content")}</div>', unsafe_allow_html=True)
                     
                     # If no image but has text content
                     if not image.get('image_base64') and image.get('content'):
-                        st.markdown("**Figure Content (Text Only):**")
+                        st.markdown("**Image Content (Text Only):**")
                         content = image.get("content", "No text content")
                         st.markdown(f'<div class="image-box">{content}</div>', unsafe_allow_html=True)
                         st.info("💡 This is text content from a figure/diagram detected by Azure DI.")
         else:
-            st.warning("No figures or images extracted")
+            st.warning("No images extracted")
     
     with tab4:
         st.subheader("💾 Storage Information")
@@ -351,32 +360,32 @@ if st.session_state.processed_data:
                 if table.get('csv_path') and os.path.exists(table['csv_path']):
                     st.success(f"✅ Table {i+1}: {table['csv_path']}")
         
-        # Image/Figure files
+        # Image files
         images = st.session_state.processed_data.get("images", [])
         if images:
-            st.markdown("**🖼️ Figure Files:**")
+            st.markdown("**🖼️ Image Files:**")
             for i, image in enumerate(images):
                 if image.get('image_path') and os.path.exists(image['image_path']):
-                    st.success(f"✅ Figure {i+1}: {image['image_path']}")
+                    st.success(f"✅ Image {i+1}: {image['image_path']}")
                 # Check for text files
                 text_file = f"extracted_content/images/{base_filename}_figure_{i+1}.txt"
                 if os.path.exists(text_file):
-                    st.success(f"✅ Figure {i+1} text: {text_file}")
+                    st.success(f"✅ Image {i+1} text: {text_file}")
         
         # Summary
         st.markdown("---")
         st.markdown("**📈 Processing Summary:**")
         stats = st.session_state.processed_data.get("stats", {})
-        processing_method = st.session_state.processed_data.get("processing_method", "Unknown")
+        processing_method = st.session_state.processed_data.get("processing_method", "azure_document_intelligence")
         
         st.info(f"""
         **Processing Method:** {processing_method}
         **Text Chunks:** {stats.get("text_count", 0)}
         **Tables:** {stats.get("table_count", 0)}
-        **Figures/Images:** {stats.get("image_count", 0)}
+        **Images:** {stats.get("image_count", 0)}
         **File Extension:** {st.session_state.processed_data.get("file_extension", "unknown")}
         """)
 
 # Footer
 st.markdown("---")
-st.markdown('<p style="text-align: center; color: #666; font-size: 12px;">Document Processor with Azure Document Intelligence Layout Model - Pure Azure DI Implementation</p>', unsafe_allow_html=True)
+st.markdown('<p style="text-align: center; color: #666; font-size: 12px;">Document Processor with Azure Document Intelligence - Basic Implementation</p>', unsafe_allow_html=True)
