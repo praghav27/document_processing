@@ -1,0 +1,347 @@
+# import os
+# import uuid
+# from typing import List
+# from dotenv import load_dotenv
+# from azure.core.credentials import AzureKeyCredential
+# from azure.core.exceptions import ResourceNotFoundError, HttpResponseError
+# from azure.search.documents import SearchClient
+# from azure.search.documents.indexes import SearchIndexClient
+# from azure.search.documents.indexes.models import (
+#     SearchIndex, SimpleField, SearchableField, SearchField, SearchFieldDataType,SemanticSearch,SemanticField,ComplexField,
+#     VectorSearch, HnswAlgorithmConfiguration,SemanticPrioritizedFields ,
+#    ScoringProfile, TextWeights,SemanticConfiguration,VectorSearchProfile,AzureOpenAIVectorizer,AzureOpenAIVectorizerParameters
+# )
+# from config import AZURE_EMBEDDING_MODEL_NAME,AZURE_AI_SEARCH_ENDPOINT,AZURE_AI_SEARCH_KEY,AZURE_EMBEDDING_MODEL,AZURE_EMBEDDING_ENDPOINT,AZURE_EMBEDDING_API_KEY, AZURE_AI_SEARCH_RFI_INDEX_NAME
+
+# print("Azure embedding model:", AZURE_EMBEDDING_MODEL_NAME)
+# print("Azure embedding:", AZURE_EMBEDDING_API_KEY)
+
+# credential = AzureKeyCredential(AZURE_AI_SEARCH_KEY)
+# index_client = SearchIndexClient(endpoint=AZURE_AI_SEARCH_ENDPOINT, credential=credential)
+
+
+# fields = [
+#     SimpleField(name="chunk_id", type=SearchFieldDataType.String, key=True, retrievable=True),
+#     SimpleField(name="file_name", type=SearchFieldDataType.String, filterable=True),
+#     SearchableField(name="section_name", type=SearchFieldDataType.String, facetable=True),
+#     SimpleField(name="section_no", type=SearchFieldDataType.String, retrievable=True),
+#     SearchableField(name="domain", type=SearchFieldDataType.String, filterable=True),
+#     SimpleField(name="content_type", type=SearchFieldDataType.String, filterable=True, facetable=True),
+#     SimpleField(name="author", type=SearchFieldDataType.String, retrievable=True),
+#     SearchableField(name="content", type=SearchFieldDataType.String),
+#     SearchableField(name="verbalized_content", type=SearchFieldDataType.String),
+    
+#     # Vector field
+#     SearchField(
+#         name="content_vector", 
+#         type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
+#         searchable=True, 
+#         vector_search_dimensions=3072, 
+#         vector_search_profile_name="myHnswProfile"
+#     ),
+
+#     ComplexField(name="metadata", fields=[
+#         SimpleField(name="created_at", type=SearchFieldDataType.String, retrievable=True),
+#         SimpleField(name="chunk_index", type=SearchFieldDataType.Int32, retrievable=True),
+#         SimpleField(name="word_count", type=SearchFieldDataType.Int32, retrievable=True),
+#         SimpleField(name="char_count", type=SearchFieldDataType.Int32, retrievable=True),
+
+#         # LLM extracted metadata
+#         ComplexField(name="llm_extracted_metadata", fields=[
+#             SimpleField(name="document_id", type=SearchFieldDataType.String, filterable=True),
+#             SearchableField(name="project_title", type=SearchFieldDataType.String),
+#             SimpleField(name="client_name", type=SearchFieldDataType.String, filterable=True, facetable=True),
+#             SimpleField(name="domain_category", type=SearchFieldDataType.String, filterable=True, facetable=True),
+#             SimpleField(name="service_category", type=SearchFieldDataType.String, filterable=True, facetable=True),
+#             SimpleField(name="submission_date", type=SearchFieldDataType.String, filterable=True, sortable=True),
+#             SimpleField(name="duration", type=SearchFieldDataType.String, retrievable=True),
+#             SimpleField(name="rfi_description", type=SearchFieldDataType.String, retrievable=True),
+# ]),
+#         # Table info structure
+#         ComplexField(name="table_info", fields=[
+#             SimpleField(name="page_number", type=SearchFieldDataType.Int32, filterable=True, sortable=True, retrievable=True),
+#             SimpleField(name="row_count", type=SearchFieldDataType.Int32, retrievable=True),
+#             SimpleField(name="column_count", type=SearchFieldDataType.Int32, retrievable=True),
+#             SearchableField(name="csv_path", type=SearchFieldDataType.String),
+#             ComplexField(name="section_info", fields=[
+#                 SearchableField(name="section_role", type=SearchFieldDataType.String),
+#                 SearchableField(name="section_content", type=SearchFieldDataType.String),
+#                 SimpleField(name="section_page", type=SearchFieldDataType.Int32),
+#                 SimpleField(name="section_paragraph_index", type=SearchFieldDataType.Double),
+#                 SimpleField(name="distance_from_section", type=SearchFieldDataType.Double)
+#             ])
+#         ]),
+#         # Image info structure
+#         ComplexField(name="image_info", fields=[
+#             SimpleField(name="page_number", type=SearchFieldDataType.Int32, retrievable=True),
+#             SearchableField(name="image_type", type=SearchFieldDataType.String),
+#             SearchableField(name="image_path", type=SearchFieldDataType.String, retrievable=True),
+#             SimpleField(name="width", type=SearchFieldDataType.Int32, retrievable=True),
+#             SimpleField(name="height", type=SearchFieldDataType.Int32, retrievable=True),
+#             ComplexField(name="section_info", fields=[
+#                 SearchableField(name="section_role", type=SearchFieldDataType.String),
+#                 SearchableField(name="section_content", type=SearchFieldDataType.String),
+#                 SimpleField(name="section_page", type=SearchFieldDataType.Int32),
+#                 SimpleField(name="section_paragraph_index", type=SearchFieldDataType.Double),
+#                 SimpleField(name="distance_from_section", type=SearchFieldDataType.Double)
+#             ])
+#         ])
+#     ])
+# ]
+
+
+# openai_params = AzureOpenAIVectorizerParameters(
+#     resource_url="https://tetratech.openai.azure.com",
+#     deployment_name=AZURE_EMBEDDING_MODEL,
+#     model_name=AZURE_EMBEDDING_MODEL_NAME,
+#     api_key=AZURE_EMBEDDING_API_KEY
+# )
+
+# openai_vectorizer = AzureOpenAIVectorizer(
+#     vectorizer_name="myVectorizer",
+#     parameters=openai_params
+# )
+
+# vector_search = VectorSearch(
+#     algorithms=
+#     [
+#         HnswAlgorithmConfiguration(
+#             name="myHnsw",
+#             kind="hnsw",
+#             parameters={"m": 4, "efConstruction": 400}
+
+#         )
+#     ],
+#     profiles=[
+#         VectorSearchProfile(
+#             name="myHnswProfile",
+            
+#             algorithm_configuration_name="myHnsw",
+#             vectorizer_name="myVectorizer"
+#         )
+#     ],
+#     vectorizers=[openai_vectorizer]
+# )
+
+
+# semantic_config = SemanticConfiguration(
+#     name="my-semantic-config",
+#     prioritized_fields=SemanticPrioritizedFields(
+#         title_field=SemanticField(field_name="metadata/llm_extracted_metadata/project_title"),
+#         keywords_fields=[SemanticField(field_name="metadata/llm_extracted_metadata/client_name")],
+#         content_fields=[SemanticField(field_name="content"),SemanticField(field_name="section_name")],
+#     )
+# )
+
+# # Scoring profile
+# scoring_profiles = [
+#     ScoringProfile(
+#         name="weightedProfile",
+#         text_weights=TextWeights(weights={
+#             "metadata/llm_extracted_metadata/project_title": 3.0,
+#             "section_name": 2.0,
+#             "content": 1.0
+#         })
+#     )
+# ]
+
+# semantic_search = SemanticSearch(
+#     configurations=[semantic_config])
+
+# # Create index schema
+# index = SearchIndex(
+#     name=AZURE_AI_SEARCH_RFI_INDEX_NAME,
+#     fields=fields,
+#     vector_search=vector_search,
+#     scoring_profiles=scoring_profiles,
+#     semantic_search=semantic_search
+    
+# )
+
+# index_client.delete_index(AZURE_AI_SEARCH_RFI_INDEX_NAME)
+
+# index_client.create_index(index)
+# print(f"✅ Index '{AZURE_AI_SEARCH_RFI_INDEX_NAME}' created successfully.")
+
+
+from azure.core.credentials import AzureKeyCredential
+from azure.search.documents.indexes import SearchIndexClient
+from azure.search.documents.indexes.models import (
+    SearchIndex, SimpleField, SearchableField, SearchField, SearchFieldDataType, SemanticSearch, SemanticField, ComplexField,
+    VectorSearch, HnswAlgorithmConfiguration, SemanticPrioritizedFields,
+    ScoringProfile, TextWeights, SemanticConfiguration, VectorSearchProfile, AzureOpenAIVectorizer, AzureOpenAIVectorizerParameters
+)
+from config import (
+    AZURE_EMBEDDING_MODEL_NAME, AZURE_AI_SEARCH_ENDPOINT, AZURE_AI_SEARCH_KEY,
+    AZURE_EMBEDDING_MODEL, AZURE_EMBEDDING_ENDPOINT, AZURE_EMBEDDING_API_KEY, AZURE_AI_SEARCH_RFI_INDEX_NAME
+)
+
+class RFPRequestIndexManager:
+    def __init__(self):
+        print("Azure embedding model:", AZURE_EMBEDDING_MODEL_NAME)
+        print("Azure embedding:", AZURE_EMBEDDING_API_KEY)
+        self.credential = AzureKeyCredential(AZURE_AI_SEARCH_KEY)
+        self.index_client = SearchIndexClient(endpoint=AZURE_AI_SEARCH_ENDPOINT, credential=self.credential)
+        self.index_name = AZURE_AI_SEARCH_RFI_INDEX_NAME
+
+    def build_index_schema(self):
+        fields = [
+            SimpleField(name="chunk_id", type=SearchFieldDataType.String, key=True, retrievable=True),
+            SimpleField(name="project_id", type=SearchFieldDataType.String, filterable=True, facetable=True, retrievable=True),
+            # SimpleField(name="file_name", type=SearchFieldDataType.String, filterable=True),
+            # SearchableField(name="section_name", type=SearchFieldDataType.String, facetable=True),
+            # SimpleField(name="section_no", type=SearchFieldDataType.String, retrievable=True),
+            # SearchableField(name="domain", type=SearchFieldDataType.String, filterable=True),
+            # SimpleField(name="content_type", type=SearchFieldDataType.String, filterable=True, facetable=True),
+            # SimpleField(name="author", type=SearchFieldDataType.String, retrievable=True),
+            # SearchableField(name="content", type=SearchFieldDataType.String),
+            # SearchableField(name="verbalized_content", type=SearchFieldDataType.String),
+            SearchField(
+                name="scope_of_work_vectorized", 
+                type=SearchFieldDataType.Collection(SearchFieldDataType.Single),
+                searchable=True, 
+                vector_search_dimensions=3072, 
+                vector_search_profile_name="myHnswProfile"
+            ),
+            # ComplexField(name="metadata", fields=[
+            #     SimpleField(name="created_at", type=SearchFieldDataType.String, retrievable=True),
+            #     SimpleField(name="chunk_index", type=SearchFieldDataType.Int32, retrievable=True),
+            #     SimpleField(name="word_count", type=SearchFieldDataType.Int32, retrievable=True),
+            #     SimpleField(name="char_count", type=SearchFieldDataType.Int32, retrievable=True),
+            # ComplexField(name="llm_extracted_metadata", fields=[
+            SearchableField(name="project_name", type=SearchFieldDataType.String),
+            SearchableField(name="client", type=SearchFieldDataType.String, filterable=True, facetable=True),
+            SearchableField(name="region", type=SearchFieldDataType.String, filterable=True, facetable=True),
+            SearchableField(name="industry", type=SearchFieldDataType.String, filterable=True, facetable=True),
+            SearchableField(name="prepared_date", type=SearchFieldDataType.String, filterable=True, sortable=True),
+            SearchableField(name="station_discipline", type=SearchFieldDataType.String, retrievable=True),
+            SearchableField(name="scope_of_work", type=SearchFieldDataType.String, retrievable=True),
+            SearchableField(name="required_activities", type=SearchFieldDataType.String, retrievable=True),
+            # ])
+                # ComplexField(name="table_info", fields=[
+                #     SimpleField(name="page_number", type=SearchFieldDataType.Int32, filterable=True, sortable=True, retrievable=True),
+                #     SimpleField(name="row_count", type=SearchFieldDataType.Int32, retrievable=True),
+                #     SimpleField(name="column_count", type=SearchFieldDataType.Int32, retrievable=True),
+                #     SearchableField(name="csv_path", type=SearchFieldDataType.String),
+                #     ComplexField(name="section_info", fields=[
+                #         SearchableField(name="section_role", type=SearchFieldDataType.String),
+                #         SearchableField(name="section_content", type=SearchFieldDataType.String),
+                #         SimpleField(name="section_page", type=SearchFieldDataType.Int32),
+                #         SimpleField(name="section_paragraph_index", type=SearchFieldDataType.Double),
+                #         SimpleField(name="distance_from_section", type=SearchFieldDataType.Double)
+                #     ])
+                # ]),
+                # ComplexField(name="image_info", fields=[
+                #     SimpleField(name="page_number", type=SearchFieldDataType.Int32, retrievable=True),
+                #     SearchableField(name="image_type", type=SearchFieldDataType.String),
+                #     SearchableField(name="image_path", type=SearchFieldDataType.String, retrievable=True),
+                #     SimpleField(name="width", type=SearchFieldDataType.Int32, retrievable=True),
+                #     SimpleField(name="height", type=SearchFieldDataType.Int32, retrievable=True),
+                #     ComplexField(name="section_info", fields=[
+                #         SearchableField(name="section_role", type=SearchFieldDataType.String),
+                #         SearchableField(name="section_content", type=SearchFieldDataType.String),
+                #         SimpleField(name="section_page", type=SearchFieldDataType.Int32),
+                #         SimpleField(name="section_paragraph_index", type=SearchFieldDataType.Double),
+                #         SimpleField(name="distance_from_section", type=SearchFieldDataType.Double)
+                #     ])
+                # ])
+            # ])
+        ]
+
+        openai_params = AzureOpenAIVectorizerParameters(
+            resource_url="https://ttdevopscaedevaif-rfprfi.openai.azure.com/",
+            deployment_name=AZURE_EMBEDDING_MODEL,
+            model_name=AZURE_EMBEDDING_MODEL_NAME,
+            api_key=AZURE_EMBEDDING_API_KEY
+        )
+
+        openai_vectorizer = AzureOpenAIVectorizer(
+            vectorizer_name="myVectorizer",
+            parameters=openai_params
+        )
+
+        vector_search = VectorSearch(
+            algorithms=[
+                HnswAlgorithmConfiguration(
+                    name="myHnsw",
+                    kind="hnsw",
+                    parameters={"m": 4, "efConstruction": 400}
+                )
+            ],
+            profiles=[
+                VectorSearchProfile(
+                    name="myHnswProfile",
+                    algorithm_configuration_name="myHnsw",
+                    vectorizer_name="myVectorizer"
+                )
+            ],
+            vectorizers=[openai_vectorizer]
+        )
+
+        # semantic_config = SemanticConfiguration(
+        #     name="my-semantic-config",
+        #     prioritized_fields=SemanticPrioritizedFields(
+        #         title_field=SemanticField(field_name="llm_extracted_metadata/client"),
+        #         keywords_fields=[SemanticField(field_name="llm_extracted_metadata/region")],
+        #         content_fields=[SemanticField(field_name="llm_extracted_metadata/scope_of_work"), SemanticField(field_name="llm_extracted_metadata/industry")],
+        #     )
+        # )
+        semantic_config = SemanticConfiguration(
+            name="my-semantic-config",
+            prioritized_fields=SemanticPrioritizedFields(
+                title_field=SemanticField(field_name="client"),
+                keywords_fields=[SemanticField(field_name="region")],
+                content_fields=[SemanticField(field_name="scope_of_work"), SemanticField(field_name="industry")],
+            )
+        )
+
+        # scoring_profiles = [
+        #     ScoringProfile(
+        #         name="weightedProfile",
+        #         text_weights=TextWeights(weights={
+        #             "llm_extracted_metadata/client": 3.0,
+        #             "llm_extracted_metadata/region": 2.0,
+        #             "llm_extracted_metadata/industry": 1.0
+        #         })
+        #     )
+        # ]
+        scoring_profiles = [
+            ScoringProfile(
+                name="weightedProfile",
+                text_weights=TextWeights(weights={
+                    "client": 3.0,
+                    "region": 2.0,
+                    "industry": 1.0
+                })
+            )
+        ]
+
+        semantic_search = SemanticSearch(
+            configurations=[semantic_config]
+        )
+
+        index = SearchIndex(
+            name=self.index_name,
+            fields=fields,
+            vector_search=vector_search,
+            scoring_profiles=scoring_profiles,
+            semantic_search=semantic_search
+        )
+        return index
+
+    def recreate_index(self):
+        try:
+            self.index_client.delete_index(self.index_name)
+            print(f"Deleted existing index '{self.index_name}'.")
+        except Exception as e:
+            print(f"Index '{self.index_name}' does not exist or could not be deleted: {e}")
+
+        index = self.build_index_schema()
+        self.index_client.create_index(index)
+        print(f"✅ Index '{self.index_name}' created successfully.")
+
+# Usage:
+manager = RFPRequestIndexManager()
+manager.recreate_index()
+
+
