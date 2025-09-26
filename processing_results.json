@@ -1,0 +1,211 @@
+[
+  {
+    "project_id": "sample_1",
+    "file_path": "C:/Users/Sarthak.hardas/Downloads/Tetratech Five splitted document/sample_1.pdf",
+    "metadata": {
+      "project_name": "",
+      "client": "",
+      "industry": "Power & Energy",
+      "region": "",
+      "prepared_date": "2022-05-17",
+      "components": {
+        "ELE": {
+          "scope_of_work": "The electrical scope includes the provision of control cabinets with stainless steel NEMA 4X enclosures, LED lighting, GFI duplex receptacles, anti-condensation heaters, and electrical counters. It also involves the installation of gas monitoring systems, auxiliary alarm signal contacts, and online condition monitoring systems for SF6 gas density, breaker contact wear, and travel time.",
+          "required_activities": "Activities include the installation of control cabinets with specified accessories, wiring and mounting of gas monitoring systems, and integration of online condition monitoring systems. The work also involves ensuring proper calibration of electrical counters, installation of heaters with stainless steel shields, and configuration of auxiliary contacts for remote monitoring and alarm signaling."
+        },
+        "AUX": {
+          "scope_of_work": "The auxiliary scope involves the inclusion of accessories such as ground fault interrupters, anti-condensation heaters, ground buses, and nameplates in control cabinets. It also includes the provision of manual controls, reversible contacts, and safety devices for maintenance personnel, along with thermal magnetic overload protection for motors.",
+          "required_activities": "Activities include equipping control cabinets with specified auxiliary components, ensuring proper installation and functionality of heaters and ground buses, and integrating safety devices for maintenance. The work also involves the installation of manual controls, reversible contacts, and thermal magnetic overload protection for motors."
+        }
+      }
+    },
+    "component_chunks": [
+      {
+        "chunk_id": "93e6c323",
+        "project_id": "sample_1",
+        "project_name": "",
+        "client": "",
+        "industry": "Power & Energy",
+        "region": "",
+        "prepared_date": "2022-05-17",
+        "components": {
+          "ELE": {
+            "scope_of_work": "The electrical scope includes the provision of control cabinets with stainless steel NEMA 4X enclosures, LED lighting, GFI duplex receptacles, anti-condensation heaters, and electrical counters. It also involves the installation of gas monitoring systems, auxiliary alarm signal contacts, and online condition monitoring systems for SF6 gas density, breaker contact wear, and travel time.",
+            "required_activities": "Activities include the installation of control cabinets with specified accessories, wiring and mounting of gas monitoring systems, and integration of online condition monitoring systems. The work also involves ensuring proper calibration of electrical counters, installation of heaters with stainless steel shields, and configuration of auxiliary contacts for remote monitoring and alarm signaling."
+          }
+        }
+      },
+      {
+        "chunk_id": "4a90de0e",
+        "project_id": "sample_1",
+        "project_name": "",
+        "client": "",
+        "industry": "Power & Energy",
+        "region": "",
+        "prepared_date": "2022-05-17",
+        "components": {
+          "AUX": {
+            "scope_of_work": "The auxiliary scope involves the inclusion of accessories such as ground fault interrupters, anti-condensation heaters, ground buses, and nameplates in control cabinets. It also includes the provision of manual controls, reversible contacts, and safety devices for maintenance personnel, along with thermal magnetic overload protection for motors.",
+            "required_activities": "Activities include equipping control cabinets with specified auxiliary components, ensuring proper installation and functionality of heaters and ground buses, and integrating safety devices for maintenance. The work also involves the installation of manual controls, reversible contacts, and thermal magnetic overload protection for motors."
+          }
+        }
+      }
+    ],
+    "summary": "### **Summary (5–7 bullets):**\n1. **Inaccurate or Missing Drawings**: Lack of accurate facility or system drawings can lead to design mismatches, rework, and schedule delays. Field modifications may be required to address discrepancies.\n   - **Mitigation**: Conduct site surveys, audits, and obtain updated drawings early in the project.\n\n2. **Vendor Delays**: Late submissions of shop drawings or equipment proposals can disrupt critical project timelines and increase costs.\n   - **Mitigation**: Enforce strict deadlines for vendor submissions at 60% and 90% design stages.\n\n3. **Interface and Communication Issues**: Poorly defined interfaces or inadequate communication can delay deliverables and increase costs.\n   - **Mitigation**: Implement proactive communication plans, regular progress meetings, and clear interface management protocols.\n\n4. **Aging or Inadequate Cabling**: Existing cables may be at the end of their lifecycle, requiring replacement and additional design modifications.\n   - **Mitigation**: Conduct site visits to assess cable conditions and update cable lists and drawings accordingly.\n\n5. **Stakeholder Availability**: Delays in stakeholder reviews or approvals can impact project schedules and deliverables.\n   - **Mitigation**: Align schedules with stakeholders during kickoff meetings and allow sufficient review time.\n\n6. **Constructability Challenges**: Proximity of new installations to existing infrastructure can create construction challenges, such as limited space for cable routing or equipment placement.\n   - **Mitigation**: Coordinate with stakeholders during planning to identify feasible solutions and adjust designs as needed.\n\n7. **Safety and Environmental Risks**: Improper cabling or wiring design can lead to overheating, electrical faults, or environmental hazards.\n   - **Mitigation**: Use anti-condensation heaters, stainless steel heat shields, and ensure proper grounding and separation of control cables.\n\n---\n\n### **Recommendations (Optional):**\n1. Establish a **Risk Register** at project initiation to track and mitigate risks systematically.\n2. Conduct **3D scans and hand-tracing** of cables during site visits to confirm terminal points and ensure accurate interfaces.\n3. Engage vendors and stakeholders early to align technical specifications and minimize delays.\n\n---\n\n### **Knowledge Gaps (Optional):**\n- Specific details on the condition of existing wiring and cabling infrastructure are not fully addressed.\n- Uncertainty regarding the adequacy of existing structures for new loads (e.g., short-circuit levels, weight of double conductors).",
+    "processing_time": 63.448047399520874,
+    "success": true,
+    "error": null
+  },
+  {
+    "project_id": "sample_2",
+    "file_path": "C:/Users/Sarthak.hardas/Downloads/Tetratech Five splitted document/sample_2.pdf",
+    "metadata": {
+      "project_name": "",
+      "client": "newfoundland labrador hydro",
+      "industry": "Power & Energy",
+      "region": "Newfoundland & Labrador",
+      "prepared_date": "2022-12-19",
+      "components": {
+        "ELE": {
+          "scope_of_work": "This standard defines the technical specifications for 120V outdoor lighting systems used in terminal stations. It includes requirements for LED luminaires, photoelectric controllers, lighting circuits, and associated wiring, ensuring compliance with IES Recommended Industrial Lighting Practices and NL Hydro standards.",
+          "required_activities": "Install outdoor luminaires on existing steel structures and terminal station buildings. Ensure lighting circuits are supplied from a 120VAC panel with 15A breakers. Use shielded control cables and route them in trenches or conduits. Integrate photoelectric controllers for dusk-to-dawn operation. Adhere to NL Hydro standards for installation and wiring."
+        },
+        "STR": {
+          "scope_of_work": "The document specifies the installation of outdoor luminaires on existing steel supporting structures, including single and tandem mount substation arms. It also covers mounting on high bay steel structures for adequate illumination and visibility of switching devices.",
+          "required_activities": "Install single or tandem mount substation arms on steel structures for luminaires. Ensure proper mounting on high bay steel structures for visibility of switching devices. Use corrosion-resistant materials and adhere to NL Hydro standards for structural installations."
+        }
+      }
+    },
+    "component_chunks": [
+      {
+        "chunk_id": "06d3533a",
+        "project_id": "sample_2",
+        "project_name": "",
+        "client": "newfoundland labrador hydro",
+        "industry": "Power & Energy",
+        "region": "Newfoundland & Labrador",
+        "prepared_date": "2022-12-19",
+        "components": {
+          "ELE": {
+            "scope_of_work": "This standard defines the technical specifications for 120V outdoor lighting systems used in terminal stations. It includes requirements for LED luminaires, photoelectric controllers, lighting circuits, and associated wiring, ensuring compliance with IES Recommended Industrial Lighting Practices and NL Hydro standards.",
+            "required_activities": "Install outdoor luminaires on existing steel structures and terminal station buildings. Ensure lighting circuits are supplied from a 120VAC panel with 15A breakers. Use shielded control cables and route them in trenches or conduits. Integrate photoelectric controllers for dusk-to-dawn operation. Adhere to NL Hydro standards for installation and wiring."
+          }
+        }
+      },
+      {
+        "chunk_id": "91d90c50",
+        "project_id": "sample_2",
+        "project_name": "",
+        "client": "newfoundland labrador hydro",
+        "industry": "Power & Energy",
+        "region": "Newfoundland & Labrador",
+        "prepared_date": "2022-12-19",
+        "components": {
+          "STR": {
+            "scope_of_work": "The document specifies the installation of outdoor luminaires on existing steel supporting structures, including single and tandem mount substation arms. It also covers mounting on high bay steel structures for adequate illumination and visibility of switching devices.",
+            "required_activities": "Install single or tandem mount substation arms on steel structures for luminaires. Ensure proper mounting on high bay steel structures for visibility of switching devices. Use corrosion-resistant materials and adhere to NL Hydro standards for structural installations."
+          }
+        }
+      }
+    ],
+    "summary": "### **Summary of Risks in Cabling and Wiring**\n\n1. **Inaccurate or Outdated Documentation**:  \n   - Existing drawings may not reflect actual system configurations, leading to design mismatches and rework.  \n   - **Mitigation**: Conduct site surveys, verify layouts, and update drawings early in the project.\n\n2. **Space Constraints in Cable Trenching**:  \n   - Lack of updated cable trench layouts may result in insufficient space for new cables.  \n   - **Mitigation**: Regularly inspect and update trench layouts; conduct feasibility studies to anticipate conflicts.\n\n3. **Aging Infrastructure**:  \n   - Existing cables may be at the end of their lifecycle, requiring replacement and additional design modifications.  \n   - **Mitigation**: Assess cable conditions during site visits and plan for replacements in the project scope.\n\n4. **Vendor and Equipment Delays**:  \n   - Delays in vendor drawings or equipment delivery can impact project schedules.  \n   - **Mitigation**: Request vendor drawings at early design stages (e.g., 60%) and align expectations during procurement.\n\n5. **Integration Challenges with New Technology**:  \n   - Compatibility issues may arise between old and new systems, risking operational inefficiencies.  \n   - **Mitigation**: Research and implement state-of-the-art technology with proven integration capabilities.\n\n6. **Geotechnical and Structural Risks**:  \n   - Poor soil conditions or insufficient load-bearing capacity of existing structures can delay installations.  \n   - **Mitigation**: Conduct early geotechnical investigations and reinforce structures as needed.\n\n7. **Safety and Quality Risks**:  \n   - Improper bonding, grounding, or shielding of cables can lead to electrical hazards and performance issues.  \n   - **Mitigation**: Adhere to standards (e.g., CSA C22.1:21) and use shielded control cables with proper grounding.\n\n---\n\n### **Recommendations**\n1. **Early Risk Identification**: Use a risk register to proactively document and address risks during the project initiation phase.  \n2. **Vendor Coordination**: Engage vendors early to align on technical specifications and delivery timelines.  \n3. **Regular Inspections**: Update trench layouts and infrastructure conditions periodically to avoid last-minute conflicts.\n\n---\n\n### **Knowledge Gaps**\n- Specific timelines for vendor deliverables and contingency plans for delays are not detailed.  \n- Lack of clarity on how integration testing for old and new systems will be conducted.  ",
+    "processing_time": 50.77022051811218,
+    "success": true,
+    "error": null
+  },
+  {
+    "project_id": "sample_3",
+    "file_path": "C:/Users/Sarthak.hardas/Downloads/Tetratech Five splitted document/sample_3.pdf",
+    "metadata": {
+      "project_name": "",
+      "client": "Newfoundland and Labrador Hydro",
+      "industry": "Power & Energy",
+      "region": "Newfoundland and Labrador, Canada",
+      "prepared_date": "2021-12-17",
+      "components": {
+        "ELE": {
+          "scope_of_work": "The document outlines the technical requirements for electrical systems, including the design, installation, and sizing of stationary lead-acid batteries for terminal stations and generating facilities. It specifies compliance with IEEE standards, battery duty cycles, and load profiles, ensuring reliable power supply for critical operations.",
+          "required_activities": "Activities include providing detailed manufacturer drawings, completing cell sizing worksheets as per IEEE standards, submitting warranty claim criteria, and supplying discharge curves. Vendors must also ensure proper packaging, shipping, and installation of batteries, racks, and accessories, along with providing operation and maintenance manuals."
+        },
+        "AUX": {
+          "scope_of_work": "The auxiliary scope involves the provision of installation instructions, operation manuals, and site-specific documentation for battery banks and racks. It includes ensuring proper handling, packaging, and transportation of auxiliary equipment to meet operational requirements.",
+          "required_activities": "Activities include preparing and shipping auxiliary documentation to the specified address, ensuring compliance with ISO Quality Assurance standards, and coordinating delivery with the purchaser. Vendors must also provide forklift and operator services for off-loading auxiliary equipment at the destination."
+        }
+      }
+    },
+    "component_chunks": [
+      {
+        "chunk_id": "e151d173",
+        "project_id": "sample_3",
+        "project_name": "",
+        "client": "Newfoundland and Labrador Hydro",
+        "industry": "Power & Energy",
+        "region": "Newfoundland and Labrador, Canada",
+        "prepared_date": "2021-12-17",
+        "components": {
+          "ELE": {
+            "scope_of_work": "The document outlines the technical requirements for electrical systems, including the design, installation, and sizing of stationary lead-acid batteries for terminal stations and generating facilities. It specifies compliance with IEEE standards, battery duty cycles, and load profiles, ensuring reliable power supply for critical operations.",
+            "required_activities": "Activities include providing detailed manufacturer drawings, completing cell sizing worksheets as per IEEE standards, submitting warranty claim criteria, and supplying discharge curves. Vendors must also ensure proper packaging, shipping, and installation of batteries, racks, and accessories, along with providing operation and maintenance manuals."
+          }
+        }
+      },
+      {
+        "chunk_id": "88d1500f",
+        "project_id": "sample_3",
+        "project_name": "",
+        "client": "Newfoundland and Labrador Hydro",
+        "industry": "Power & Energy",
+        "region": "Newfoundland and Labrador, Canada",
+        "prepared_date": "2021-12-17",
+        "components": {
+          "AUX": {
+            "scope_of_work": "The auxiliary scope involves the provision of installation instructions, operation manuals, and site-specific documentation for battery banks and racks. It includes ensuring proper handling, packaging, and transportation of auxiliary equipment to meet operational requirements.",
+            "required_activities": "Activities include preparing and shipping auxiliary documentation to the specified address, ensuring compliance with ISO Quality Assurance standards, and coordinating delivery with the purchaser. Vendors must also provide forklift and operator services for off-loading auxiliary equipment at the destination."
+          }
+        }
+      }
+    ],
+    "summary": "### **Summary of Risks in Cabling and Wiring**\n\n1. **Inadequate Documentation and Drawings**  \n   - Existing facility drawings may not reflect actual configurations, leading to design mismatches and rework.  \n   - **Mitigation**: Conduct site surveys, audits, and updates to ensure accuracy of drawings.\n\n2. **Space Constraints and Structural Limitations**  \n   - Limited space in cable trenches or IT/OT rooms and insufficient load-bearing capacity of floors can hinder installations.  \n   - **Mitigation**: Regular inspections, feasibility studies, and structural reinforcements if necessary.\n\n3. **Integration Challenges with Legacy Systems**  \n   - Older technology may not integrate seamlessly with new systems, causing delays and inefficiencies.  \n   - **Mitigation**: Research and implement state-of-the-art technologies and ensure compatibility during planning.\n\n4. **Vendor and Stakeholder Delays**  \n   - Delays in vendor shop drawings, stakeholder reviews, or approvals can impact project schedules.  \n   - **Mitigation**: Proactively manage timelines with clear schedules, regular follow-ups, and early buy-in from stakeholders.\n\n5. **Geotechnical and Environmental Risks**  \n   - Poor soil conditions at new installation sites may require complex foundation solutions.  \n   - **Mitigation**: Conduct early geotechnical investigations and plan for advanced foundation designs if needed.\n\n6. **Cable Aging and Replacement Needs**  \n   - Existing cables nearing end-of-life may require replacement, increasing project scope and time.  \n   - **Mitigation**: Identify aging cables early and incorporate replacement plans into the project timeline.\n\n7. **Undefined Interfaces and Communication Gaps**  \n   - Poorly defined interfaces can lead to miscommunication, delays, and increased costs.  \n   - **Mitigation**: Establish robust communication plans, regular progress meetings, and clear interface definitions.\n\n---\n\n### **Recommendations**\n1. **Develop a Comprehensive Risk Register**  \n   - Track all identified risks and mitigation strategies to ensure proactive management throughout the project lifecycle.\n\n2. **Enhance Vendor Coordination**  \n   - Set strict deadlines for vendor deliverables and integrate them into the project’s critical path to avoid delays.\n\n3. **Conduct Early Site Surveys**  \n   - Verify physical conditions, cable trench layouts, and structural capacities before finalizing designs to minimize rework.\n\n---\n\n### **Knowledge Gaps**\n- Specific details on the frequency and severity of past failures in similar projects are missing.  \n- No clear contingency plans for extreme scenarios like complete trench unavailability or critical vendor non-performance.",
+    "processing_time": 73.35304307937622,
+    "success": true,
+    "error": null
+  },
+  {
+    "project_id": "test",
+    "file_path": "C:/Users/Sarthak.hardas/Downloads/Tetratech Five splitted document/test.pdf",
+    "metadata": {
+      "project_name": "Lower Churchill Project",
+      "client": "Nalcor Energy",
+      "industry": "Power & Energy",
+      "region": "Newfoundland and Labrador, Canada",
+      "prepared_date": "2014-05-01",
+      "components": {
+        "STR": {
+          "scope_of_work": "The scope of work involves the design, detailing, material procurement, and fabrication of 350 kV HVdc galvanized steel transmission towers for the Lower Churchill Project. This includes compliance with specified codes and standards, preparation of design calculations, drawings, and models, and ensuring structural integrity under various load conditions.",
+          "required_activities": "Activities include preparing detailed design and erection drawings, conducting full-scale tower load and assembly tests, ensuring compliance with ASCE 10-97 and CSA standards, fabricating and galvanizing steel components, and providing quality control documentation. Supplier must also ensure proper labeling, packaging, and delivery of tower components, along with trial assembly for alignment verification."
+        }
+      }
+    },
+    "component_chunks": [
+      {
+        "chunk_id": "f551e38a",
+        "project_id": "test",
+        "project_name": "Lower Churchill Project",
+        "client": "Nalcor Energy",
+        "industry": "Power & Energy",
+        "region": "Newfoundland and Labrador, Canada",
+        "prepared_date": "2014-05-01",
+        "components": {
+          "STR": {
+            "scope_of_work": "The scope of work involves the design, detailing, material procurement, and fabrication of 350 kV HVdc galvanized steel transmission towers for the Lower Churchill Project. This includes compliance with specified codes and standards, preparation of design calculations, drawings, and models, and ensuring structural integrity under various load conditions.",
+            "required_activities": "Activities include preparing detailed design and erection drawings, conducting full-scale tower load and assembly tests, ensuring compliance with ASCE 10-97 and CSA standards, fabricating and galvanizing steel components, and providing quality control documentation. Supplier must also ensure proper labeling, packaging, and delivery of tower components, along with trial assembly for alignment verification."
+          }
+        }
+      }
+    ],
+    "summary": "### **Summary of Risks in Cabling and Wiring**\n\n1. **Inaccurate or Missing Documentation**  \n   - Existing facility drawings may not reflect actual conditions, leading to design mismatches and rework.  \n   - **Mitigation**: Conduct thorough site surveys, obtain Field Modification Packages (FMPs), and verify interfaces during initial site visits.\n\n2. **Vendor-Related Delays**  \n   - Delays in receiving vendor proposals or shop drawings can impact project schedules.  \n   - **Mitigation**: Require vendor submissions at 60% and 90% design stages and align vendor deliverables with project milestones.\n\n3. **Stakeholder Availability**  \n   - Late reviews or unavailability of client stakeholders can delay deliverable acceptance.  \n   - **Mitigation**: Secure early buy-in on schedules, allocate sufficient review time, and hold recurring progress meetings.\n\n4. **Technical Specification Compliance**  \n   - Vendors may struggle to meet technical requirements, leading to concessions and additional effort.  \n   - **Mitigation**: Engage vendors early during RFP and contract award stages to ensure alignment with specifications.\n\n5. **Aging Infrastructure and Obsolescence**  \n   - Existing cables or components may require replacement, increasing scope and effort.  \n   - **Mitigation**: Conduct pre-work site visits to assess infrastructure condition and adjust scope accordingly.\n\n6. **Construction and Commissioning Delays**  \n   - Delays in outages, demolition, or commissioning activities can impact as-built documentation and project timelines.  \n   - **Mitigation**: Define task timelines in schedules and expedite follow-ups with project managers.\n\n7. **Interface and Constructability Challenges**  \n   - Poorly defined interfaces or close proximity of new and existing systems can cause constructability issues.  \n   - **Mitigation**: Coordinate closely with stakeholders to resolve conflicts and adjust designs as needed.\n\n---\n\n### **Recommendations**\n1. Implement a robust risk register to track and address risks throughout the project lifecycle.  \n2. Prioritize early stakeholder engagement and clear communication to minimize delays.  \n3. Conduct comprehensive site surveys and audits to ensure design accuracy and avoid rework.\n\n---\n\n### **Knowledge Gaps**\n- Specific examples of past vendor non-compliance or stakeholder delays could provide actionable insights.  \n- Details on contingency plans for unexpected infrastructure failures or obsolescence are unclear.",
+    "processing_time": 73.57752728462219,
+    "success": true,
+    "error": null
+  }
+]
