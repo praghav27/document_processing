@@ -746,7 +746,7 @@ class RFPRequestIndexManager:
     @tracer.start_as_current_span("build_index_schema_fn")
     def build_index_schema(self):
         fields = [
-            SimpleField(name="chunk_id", type=SearchFieldDataType.String, key=True, retrievable=True),
+            SimpleField(name="chunk_id", type=SearchFieldDataType.String, key=True, retrievable=True,filterable=True, facetable=True),
             SimpleField(name="project_id", type=SearchFieldDataType.String, filterable=True, facetable=True, retrievable=True),
             SearchField(
                 name="scope_of_work_vectorized", 

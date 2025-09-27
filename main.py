@@ -449,6 +449,12 @@ class DocumentProcessorMain:
                 'processing_time': datetime.now().isoformat()
             }
 
+    
+
+
+
+
+
     def _print_all_chunks_to_terminal(self, all_chunks: List[Dict]):
         """
         Print all chunks from all documents to terminal in a formatted way (Enhanced with Table Storage info)

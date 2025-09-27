@@ -56,19 +56,28 @@ class ContentExtractor:
             self.image_extractor = ImageExtractor()
             self.section_mapper = SectionMapper()  # ✅ Keep section mapping separate
 
+    # async def _extract_project_id_from_filename(self, filename: str) -> str:
+        # """Extract project ID (first 15 characters) from filename"""
+        # if not filename:
+        #     return "unknown_project"
+        
+        # # Remove file extension and get first 15 characters
+        # base_name = os.path.splitext(filename)[0]
+        # project_id = base_name[:15] if len(base_name) >= 15 else base_name
+        # #print(f"🔑 Extracted Project ID: {project_id}")
+
+        # return project_id
     async def _extract_project_id_from_filename(self, filename: str) -> str:
-        """Extract project ID (first 15 characters) from filename"""
+        """Extract project ID from standardized filename"""
         if not filename:
             return "unknown_project"
         
-        # Remove file extension and get first 15 characters
         base_name = os.path.splitext(filename)[0]
-        project_id = base_name[:15] if len(base_name) >= 15 else base_name
-        #print(f"🔑 Extracted Project ID: {project_id}")
-
-        return project_id
+        
+        # Since we standardize filenames, project ID is always first 15 chars
+        return base_name[:15] if len(base_name) >= 15 else base_name
     
-    async def extract_all_content(self, result, filename: str, client=None, operation_id=None) -> Dict:
+    async def extract_all_content(self, result, filename: str, client=None, operation_id=None, document_type_override=None) -> Dict:
         with tracer.start_as_current_span("extract_all_content_fn") as span:
             """Extract text, tables, and images from Azure Document Intelligence result with verbalization and LLM metadata extraction"""
             base_filename = os.path.splitext(filename)[0]
@@ -89,6 +98,7 @@ class ContentExtractor:
             project_id = await self._extract_project_id_from_filename(filename)
             
             # Step 1.2 - Document type selection (Auto-detect or Hardcoded)
+
             if ENABLE_DOCUMENT_TYPE_DETECTION:
                 #print(f"📄 Step 1.2: Auto-detecting document type (RFI vs RFP)...")
                 self.document_type_info = self.type_detector.detect_document_type(self.text_elements)

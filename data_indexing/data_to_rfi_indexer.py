@@ -33,7 +33,7 @@ class AzureSearchRFPRequestUploader:
         # Azure clients
         self.search_client = SearchClient(
             endpoint=AZURE_AI_SEARCH_ENDPOINT,
-            index_name="rfp_request_v7",
+            index_name=AZURE_AI_SEARCH_RFI_INDEX_NAME,
             credential=AzureKeyCredential(AZURE_AI_SEARCH_KEY)
         )
  

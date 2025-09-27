@@ -29,7 +29,7 @@ class RFPResponseIndexManager:
         # print("Azure embedding:", AZURE_EMBEDDING_API_KEY)
         self.credential = AzureKeyCredential(AZURE_AI_SEARCH_KEY)
         self.index_client = SearchIndexClient(endpoint=AZURE_AI_SEARCH_ENDPOINT, credential=self.credential)
-        self.index_name = "rfp_response_v4"
+        self.index_name = AZURE_AI_SEARCH_RFP_INDEX_NAME
  
     @tracer.start_as_current_span("build_index_schema_fn")
     def build_index_schema(self):
