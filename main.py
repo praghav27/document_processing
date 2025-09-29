@@ -214,16 +214,29 @@ class DocumentProcessorMain:
                         print(f"📝 Extracting content from {filename} (attempt {attempt + 1})...")
                         print(f"💾 Storing metadata in Azure Table Storage for {filename}...")
                         
-                        # ENHANCED: Add timeout for content extraction
+
+                        document_type_hint = getattr(di_result.get('uploaded_file'), '_document_type_hint', None)
+    
                         extracted_content = await asyncio.wait_for(
                             self.content_extractor.extract_all_content(
                                 result,
                                 filename,
                                 client=client,
-                                operation_id=operation_id
+                                operation_id=operation_id,
+                                document_type_override=document_type_hint  # Pass the hint
                             ),
-                            timeout=600.0  # 3 minute timeout per extraction
+                            timeout=600.0
                         )
+                        # # ENHANCED: Add timeout for content extraction
+                        # extracted_content = await asyncio.wait_for(
+                        #     self.content_extractor.extract_all_content(
+                        #         result,
+                        #         filename,
+                        #         client=client,
+                        #         operation_id=operation_id
+                        #     ),
+                        #     timeout=600.0  # 3 minute timeout per extraction
+                        # )
                         
                         print(f"✅ Successfully processed {filename}")
                         

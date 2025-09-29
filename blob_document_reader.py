@@ -36,8 +36,8 @@ class BlobDocumentReader:
         folder_name = path_parts[0]
         original_filename = path_parts[-1]
         
-        # Extract project ID from folder (first 15 chars before ' - ')
-        project_id = folder_name.split(' - ')[0] if ' - ' in folder_name else folder_name[:15]
+        # Always use first 15 chars as project ID
+        project_id = folder_name[:15]
         
         # Check if filename already starts with project ID
         if original_filename.startswith(project_id):

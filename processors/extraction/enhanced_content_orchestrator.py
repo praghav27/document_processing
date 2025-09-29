@@ -45,7 +45,7 @@ class ContentExtractor:
             self.type_detector = DocumentTypeDetector()
             
             self.rfp_request_index_manager = RFPRequestIndexManager()
-            self.rfp_response_index_manager = RFPRequestIndexManager()
+            self.rfp_response_index_manager = RFPResponseIndexManager()
             
             self.data_indexing_RFP_request= AzureSearchRFPRequestUploader()
             self.data_indexing_RFP_response = AzureSearchRFPResponseUploader()
@@ -97,14 +97,21 @@ class ContentExtractor:
             # Extract project ID from filename
             project_id = await self._extract_project_id_from_filename(filename)
             
-            # Step 1.2 - Document type selection (Auto-detect or Hardcoded)
+            
 
-            if ENABLE_DOCUMENT_TYPE_DETECTION:
+            # Step 1.2 - Document type selection with OVERRIDE SUPPORT
+            if document_type_override:
+                self.document_type = document_type_override
+                print(f"🔒 EXPLICIT OVERRIDE: Using {self.document_type} from folder hint")
+                self.document_type_info = {
+                    'document_type': self.document_type,
+                    'confidence': 1.0,
+                    'reasoning': f'Explicit override to {document_type_override} based on folder structure'
+                }
+            elif ENABLE_DOCUMENT_TYPE_DETECTION:
                 #print(f"📄 Step 1.2: Auto-detecting document type (RFI vs RFP)...")
                 self.document_type_info = self.type_detector.detect_document_type(self.text_elements)
                 self.document_type = self.document_type_info.get('document_type', 'RFI')
-                document_type_folder = "rfp_request" if self.document_type == "RFI" else "rfp_response"
-                self.storage.set_project_context(filename, document_type_folder)
                 self.type_detector.print_detection_summary(self.document_type_info)
             else:
                 self.document_type = DEFAULT_DOCUMENT_TYPE
@@ -116,7 +123,25 @@ class ContentExtractor:
                 }
                 
             document_type_folder = "rfp_request" if self.document_type == "RFI" else "rfp_response"
-            self.storage.set_project_context(filename, document_type_folder)    
+            self.storage.set_project_context(filename, document_type_folder)
+            # if ENABLE_DOCUMENT_TYPE_DETECTION:
+            #     #print(f"📄 Step 1.2: Auto-detecting document type (RFI vs RFP)...")
+            #     self.document_type_info = self.type_detector.detect_document_type(self.text_elements)
+            #     self.document_type = self.document_type_info.get('document_type', 'RFI')
+            #     document_type_folder = "rfp_request" if self.document_type == "RFI" else "rfp_response"
+            #     self.storage.set_project_context(filename, document_type_folder)
+            #     self.type_detector.print_detection_summary(self.document_type_info)
+            # else:
+            #     self.document_type = DEFAULT_DOCUMENT_TYPE
+            #     #print(f"🔒 HARDCODED: Using {self.document_type} extractor (detection disabled)")
+            #     self.document_type_info = {
+            #         'document_type': self.document_type,
+            #         'confidence': 1.0,
+            #         'reasoning': 'Hardcoded configuration setting'
+            #     }
+                
+            # document_type_folder = "rfp_request" if self.document_type == "RFI" else "rfp_response"
+            # self.storage.set_project_context(filename, document_type_folder)    
 
             # Step 1.5 - Extract document metadata using selected extractor
             if self.document_type == "RFI":
